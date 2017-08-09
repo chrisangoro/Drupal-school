@@ -1,0 +1,25 @@
+uuid: 2442bbef-99ed-493f-82f9-a458a0f83b5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hours
+    - node.type.work_study_job
+id: node.work_study_job.field_hours
+field_name: field_hours
+entity_type: node
+bundle: work_study_job
+label: hours
+description: 'number of hours per week that the work-job opportunity requires to work (default: 20 hours per week).'
+required: false
+translatable: false
+default_value:
+  -
+    value: 20
+default_value_callback: ''
+settings:
+  min: 4
+  max: 40
+  prefix: ''
+  suffix: ' hours per week'
+field_type: integer

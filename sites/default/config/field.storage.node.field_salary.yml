@@ -1,0 +1,20 @@
+uuid: a4282cd0-b3a9-44bf-9af4-2efbd63a66cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_salary
+field_name: field_salary
+entity_type: node
+type: text
+settings:
+  max_length: 20
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

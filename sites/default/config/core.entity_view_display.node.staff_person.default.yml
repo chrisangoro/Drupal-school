@@ -1,0 +1,69 @@
+uuid: a6fe7552-83e6-4953-9e2a-14a5b8e2d196
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.staff_person.field_department
+    - field.field.node.staff_person.field_email
+    - field.field.node.staff_person.field_mailbox
+    - field.field.node.staff_person.field_phone
+    - field.field.node.staff_person.field_room
+    - node.type.staff_person
+  module:
+    - link
+    - text
+    - user
+id: node.staff_person.default
+targetEntityType: node
+bundle: staff_person
+mode: default
+content:
+  field_department:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_email:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_mailbox:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_phone:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_room:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

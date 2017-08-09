@@ -1,0 +1,24 @@
+uuid: d6abb4b9-ff3b-403c-bf9b-34618d86fa5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_performance_bond
+    - node.type.posting
+  module:
+    - text
+id: node.posting.field_performance_bond
+field_name: field_performance_bond
+entity_type: node
+bundle: posting
+label: 'Performance bond'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'No'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

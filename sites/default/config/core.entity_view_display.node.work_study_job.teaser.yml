@@ -1,0 +1,19 @@
+uuid: 91c1462b-0d22-4ca6-b4d0-463bc1cdd45c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.work_study_job
+  module:
+    - user
+id: node.work_study_job.teaser
+targetEntityType: node
+bundle: work_study_job
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

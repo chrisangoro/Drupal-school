@@ -1,0 +1,21 @@
+uuid: 75b82431-a4fa-4566-b8c1-c3e124b3c131
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_certificates
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_certificates
+field_name: field_certificates
+entity_type: node
+bundle: career_opportunity
+label: Certificates
+description: 'Certificates, licenses, registration preferred or required for the job posting.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

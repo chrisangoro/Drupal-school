@@ -1,0 +1,18 @@
+uuid: e533ce7e-3cb3-49d0-8ced-3daac698787b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.work_study_job
+id: node.work_study_job.title
+field_name: title
+entity_type: node
+bundle: work_study_job
+label: 'Job Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

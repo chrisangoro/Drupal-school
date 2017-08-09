@@ -1,0 +1,104 @@
+uuid: 1abf8de1-3aba-41bc-b80d-ba8d5fd3b5f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.career_opportunity.field_application_status
+    - field.field.node.career_opportunity.field_background_check
+    - field.field.node.career_opportunity.field_certificates
+    - field.field.node.career_opportunity.field_due_date
+    - field.field.node.career_opportunity.field_instructions
+    - field.field.node.career_opportunity.field_position_type
+    - field.field.node.career_opportunity.field_posted_date
+    - field.field.node.career_opportunity.field_required_qualifications
+    - field.field.node.career_opportunity.field_salary
+    - field.field.node.career_opportunity.field_summary
+    - node.type.career_opportunity
+  module:
+    - datetime
+    - text
+    - user
+id: node.career_opportunity.default
+targetEntityType: node
+bundle: career_opportunity
+mode: default
+content:
+  field_application_status:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_background_check:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_certificates:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_due_date:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_instructions:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_position_type:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_posted_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_required_qualifications:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_salary:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_summary:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

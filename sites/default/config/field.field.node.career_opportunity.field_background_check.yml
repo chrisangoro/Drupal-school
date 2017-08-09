@@ -1,0 +1,21 @@
+uuid: 45f70d56-d34f-40e9-aa78-f38a3847c3d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background_check
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_background_check
+field_name: field_background_check
+entity_type: node
+bundle: career_opportunity
+label: 'Background check'
+description: 'Is a Background check needed for this job posting?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

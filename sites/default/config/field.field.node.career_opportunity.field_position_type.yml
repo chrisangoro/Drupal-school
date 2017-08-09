@@ -1,0 +1,21 @@
+uuid: efeaeba7-f69f-443e-8284-b2b2b5527ab9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_type
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_position_type
+field_name: field_position_type
+entity_type: node
+bundle: career_opportunity
+label: position-type
+description: 'How much time does the job take? (ex: full-time, half-time, etc.)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

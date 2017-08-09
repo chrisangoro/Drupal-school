@@ -1,0 +1,20 @@
+uuid: d8dd3053-209a-42fa-803e-032291e90752
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_refund
+field_name: field_refund
+entity_type: node
+type: text
+settings:
+  max_length: 15
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

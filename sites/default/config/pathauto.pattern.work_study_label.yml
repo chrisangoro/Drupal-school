@@ -1,0 +1,22 @@
+uuid: 7d5954fa-b12d-4717-b043-ba047c3d1ec8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: work_study_label
+label: 'work-study label'
+type: 'canonical_entities:node'
+pattern: 'work-study-opportunity/[random:number]'
+selection_criteria:
+  e9aea1db-cf25-4ba3-93a8-98a63dbcc144:
+    id: node_type
+    bundles:
+      work_study_job: work_study_job
+    negate: false
+    context_mapping:
+      node: node
+    uuid: e9aea1db-cf25-4ba3-93a8-98a63dbcc144
+selection_logic: and
+weight: -5
+relationships: {  }

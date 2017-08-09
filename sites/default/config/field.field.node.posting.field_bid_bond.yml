@@ -1,0 +1,24 @@
+uuid: cdf175d2-4bb6-4216-baae-61a0e05c273e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bid_bond
+    - node.type.posting
+  module:
+    - text
+id: node.posting.field_bid_bond
+field_name: field_bid_bond
+entity_type: node
+bundle: posting
+label: 'bid bond'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'No'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

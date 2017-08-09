@@ -1,0 +1,21 @@
+uuid: cddd51ca-3c16-4508-9260-5e1ff043d313
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_due_date
+    - node.type.posting
+  module:
+    - datetime
+id: node.posting.field_due_date
+field_name: field_due_date
+entity_type: node
+bundle: posting
+label: 'Due date'
+description: 'Date of expiration of the posting.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

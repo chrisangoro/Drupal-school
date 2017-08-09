@@ -1,0 +1,21 @@
+uuid: 2f7fd4db-e5d7-419a-ace0-95d79ea9af91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_room
+    - node.type.staff_person
+  module:
+    - text
+id: node.staff_person.field_room
+field_name: field_room
+entity_type: node
+bundle: staff_person
+label: Room
+description: 'Room where the person being added lives'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: dfa65097-d00a-467a-bbaa-9fef8074464a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_department
+    - node.type.posting
+  module:
+    - text
+id: node.posting.field_department
+field_name: field_department
+entity_type: node
+bundle: posting
+label: Department
+description: 'The department that requested the posting.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

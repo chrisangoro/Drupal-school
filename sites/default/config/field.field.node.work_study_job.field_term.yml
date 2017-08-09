@@ -1,0 +1,21 @@
+uuid: 8aef5718-82b7-4044-9fd9-9ab49f225a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_term
+    - node.type.work_study_job
+  module:
+    - text
+id: node.work_study_job.field_term
+field_name: field_term
+entity_type: node
+bundle: work_study_job
+label: term
+description: 'Specify how much of the term it is going to be (ex: all, quarter, etc.)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

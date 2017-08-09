@@ -1,0 +1,17 @@
+uuid: e2d00ca1-b20f-41ea-92ad-8ee2cb02fa27
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Career Opportunity'
+type: career_opportunity
+description: 'Use Career Opportunity for current job postings.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: 88aa8efa-3ee5-4860-b5fe-e3518a9d3ea1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_posted_date
+    - node.type.posting
+  module:
+    - datetime
+id: node.posting.field_posted_date
+field_name: field_posted_date
+entity_type: node
+bundle: posting
+label: 'posted date'
+description: 'The date that the posting was posted.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

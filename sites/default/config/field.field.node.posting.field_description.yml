@@ -1,0 +1,21 @@
+uuid: 930b193c-8f1d-4532-b588-8d75ecfdbdc1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.posting
+  module:
+    - text
+id: node.posting.field_description
+field_name: field_description
+entity_type: node
+bundle: posting
+label: Description
+description: 'Description of the posting.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

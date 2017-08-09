@@ -1,0 +1,24 @@
+uuid: c3abf423-b471-4307-8fe4-e9192f646567
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_application_status
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_application_status
+field_name: field_application_status
+entity_type: node
+bundle: career_opportunity
+label: 'Application status'
+description: 'Are the applications open?'
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Accepting Applications'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,17 @@
+uuid: 6b5c5edb-30e0-4d9e-ac8a-5fdd14dda97a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: posting
+type: posting
+description: 'Use posting for current postings available.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

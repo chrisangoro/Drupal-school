@@ -1,0 +1,21 @@
+uuid: 6af12128-28ed-4b1c-b9e6-5b4a9d3da785
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_salary
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_salary
+field_name: field_salary
+entity_type: node
+bundle: career_opportunity
+label: salary
+description: 'Range of salaries that are going to be paid to the job applicant (ex: $40,000 - $45,000).'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,21 @@
+uuid: eb1f3ac8-97c1-4d21-b09b-b2c183cb8765
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact
+    - node.type.work_study_job
+  module:
+    - text
+id: node.work_study_job.field_contact
+field_name: field_contact
+entity_type: node
+bundle: work_study_job
+label: contact
+description: 'Person to contact for the work-study job.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

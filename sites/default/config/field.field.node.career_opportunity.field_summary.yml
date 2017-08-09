@@ -1,0 +1,21 @@
+uuid: 419b5668-fd1e-42a0-844b-16f9200e794a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_summary
+field_name: field_summary
+entity_type: node
+bundle: career_opportunity
+label: Summary
+description: 'What is the job posting about?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

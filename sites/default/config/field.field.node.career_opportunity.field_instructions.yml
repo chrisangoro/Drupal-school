@@ -1,0 +1,21 @@
+uuid: c5511c72-d704-453c-b304-98dd15ce4c09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instructions
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_instructions
+field_name: field_instructions
+entity_type: node
+bundle: career_opportunity
+label: Instructions
+description: 'Applications instructions for the job being posted'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

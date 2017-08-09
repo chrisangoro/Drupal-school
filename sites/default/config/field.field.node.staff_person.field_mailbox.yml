@@ -1,0 +1,23 @@
+uuid: 49a41d37-5f8d-44ab-81b9-db3670fb4384
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mailbox
+    - node.type.staff_person
+id: node.staff_person.field_mailbox
+field_name: field_mailbox
+entity_type: node
+bundle: staff_person
+label: mailbox
+description: 'Mailbox for the person being added'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 99999
+  prefix: ''
+  suffix: ''
+field_type: integer
