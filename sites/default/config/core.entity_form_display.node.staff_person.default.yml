@@ -3,106 +3,81 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.staff_person.field_department
-    - field.field.node.staff_person.field_email
     - field.field.node.staff_person.field_mailbox
-    - field.field.node.staff_person.field_phone
+    - field.field.node.staff_person.field_person_email
+    - field.field.node.staff_person.field_phone_ext
+    - field.field.node.staff_person.field_position
     - field.field.node.staff_person.field_room
+    - field.field.node.staff_person.field_type
     - node.type.staff_person
-  module:
-    - link
-    - path
-    - text
 id: node.staff_person.default
 targetEntityType: node
 bundle: staff_person
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_department:
-    weight: 32
+  field_mailbox:
+    weight: 7
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
     region: content
-  field_email:
-    weight: 31
+  field_person_email:
+    weight: 2
     settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
-  field_mailbox:
-    weight: 35
-    settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: number
+    type: email_default
     region: content
-  field_phone:
-    weight: 34
+  field_phone_ext:
+    weight: 6
     settings:
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: number
+    type: string_textfield
+    region: content
+  field_position:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_room:
-    weight: 33
+    weight: 5
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
+    region: content
+  field_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings: {  }
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

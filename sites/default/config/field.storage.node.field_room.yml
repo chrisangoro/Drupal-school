@@ -1,17 +1,18 @@
-uuid: 57f9ab4e-4fbc-4f3d-b897-3d6e631ee1f1
+uuid: 01ca7d45-2d26-4e6c-8fe0-7a780e922684
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_room
 field_name: field_room
 entity_type: node
-type: text
+type: string
 settings:
-  max_length: 50
-module: text
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

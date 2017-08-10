@@ -16,4 +16,13 @@ content:
     weight: 100
     region: content
 hidden:
+  field_contact: true
+  field_department: true
+  field_description: true
+  field_email: true
+  field_hours: true
+  field_pay_rate: true
+  field_phone: true
+  field_posted_date: true
+  field_term: true
   langcode: true

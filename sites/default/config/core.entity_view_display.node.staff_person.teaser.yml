@@ -16,4 +16,9 @@ content:
     weight: 100
     region: content
 hidden:
+  field_department: true
+  field_email: true
+  field_mailbox: true
+  field_phone: true
+  field_room: true
   langcode: true

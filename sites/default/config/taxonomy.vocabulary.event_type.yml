@@ -1,0 +1,9 @@
+uuid: 524247ae-829d-423d-abad-714d450d40cb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Event type'
+vid: event_type
+description: 'Different types of events'
+hierarchy: 0
+weight: 0

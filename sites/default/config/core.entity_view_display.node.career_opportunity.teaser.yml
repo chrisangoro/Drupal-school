@@ -16,4 +16,14 @@ content:
     weight: 100
     region: content
 hidden:
+  field_application_status: true
+  field_background_check: true
+  field_certificates: true
+  field_due_date: true
+  field_instructions: true
+  field_position_type: true
+  field_posted_date: true
+  field_required_qualifications: true
+  field_salary: true
+  field_summary: true
   langcode: true

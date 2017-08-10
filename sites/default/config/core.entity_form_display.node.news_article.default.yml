@@ -4,8 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.news_article.body
-    - field.field.node.news_article.field_extra_images
+    - field.field.node.news_article.field_news_type
     - field.field.node.news_article.field_preview_image
+    - field.field.node.news_article.field_short_title
     - image.style.thumbnail
     - node.type.news_article
   module:
@@ -32,13 +33,11 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_extra_images:
-    weight: 33
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+  field_news_type:
+    weight: 34
+    settings: {  }
     third_party_settings: {  }
-    type: image_image
+    type: options_select
     region: content
   field_preview_image:
     weight: 32
@@ -47,6 +46,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_short_title:
+    weight: 33
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   langcode:
     type: language_select

@@ -1,0 +1,21 @@
+uuid: 187700e4-0449-470d-9c1a-6c9184a18450
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_upcoming_date
+    - node.type.event
+  module:
+    - datetime
+id: node.event.field_upcoming_date
+field_name: field_upcoming_date
+entity_type: node
+bundle: event
+label: 'Event date'
+description: 'Date when the upcoming event will be held.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

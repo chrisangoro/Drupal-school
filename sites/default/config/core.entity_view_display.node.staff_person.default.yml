@@ -3,67 +3,71 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.staff_person.field_department
-    - field.field.node.staff_person.field_email
     - field.field.node.staff_person.field_mailbox
-    - field.field.node.staff_person.field_phone
+    - field.field.node.staff_person.field_person_email
+    - field.field.node.staff_person.field_phone_ext
+    - field.field.node.staff_person.field_position
     - field.field.node.staff_person.field_room
+    - field.field.node.staff_person.field_type
     - node.type.staff_person
   module:
-    - link
-    - text
     - user
 id: node.staff_person.default
 targetEntityType: node
 bundle: staff_person
 mode: default
 content:
-  field_department:
-    weight: 102
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_email:
-    weight: 101
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   field_mailbox:
     weight: 105
-    label: above
+    label: hidden
     settings:
-      thousand_separator: ''
-      prefix_suffix: true
+      link_to_entity: false
     third_party_settings: {  }
-    type: number_integer
+    type: string
     region: content
-  field_phone:
-    weight: 104
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
+  field_person_email:
+    weight: 101
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
-    type: number_integer
+    type: basic_string
+    region: content
+  field_phone_ext:
+    weight: 104
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position:
+    weight: 106
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_room:
     weight: 103
-    label: above
-    settings: {  }
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    type: text_default
+    type: string
+    region: content
+  field_type:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true
