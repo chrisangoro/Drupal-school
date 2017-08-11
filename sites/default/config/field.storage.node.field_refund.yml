@@ -1,17 +1,18 @@
-uuid: d8dd3053-209a-42fa-803e-032291e90752
+uuid: 8673fc40-f51b-49a2-9c7e-af261d29eb1c
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_refund
 field_name: field_refund
 entity_type: node
-type: text
+type: string
 settings:
-  max_length: 15
-module: text
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

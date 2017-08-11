@@ -1,17 +1,16 @@
-uuid: a8bd5990-6f0a-447e-b955-fbc7d7a8e133
+uuid: d63f7128-3a39-4911-8a3d-28fafaff347b
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - node
-id: node.field_posted_date
-field_name: field_posted_date
+    - text
+id: node.field_job_details
+field_name: field_job_details
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

@@ -1,17 +1,18 @@
-uuid: 9a4c253c-3f68-411d-9f90-f044f167ad09
+uuid: 050905a3-4a06-447a-ad80-196f08604e09
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
-id: node.field_department
-field_name: field_department
+id: node.field_apply_by_date
+field_name: field_apply_by_date
 entity_type: node
-type: text
+type: string
 settings:
-  max_length: 50
-module: text
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

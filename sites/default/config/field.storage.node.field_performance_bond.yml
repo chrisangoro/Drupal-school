@@ -1,17 +1,18 @@
-uuid: 0fa037f2-3b97-46bc-b441-1a2046b2f6ce
+uuid: a8ea30d2-3490-4516-88c2-2ec885e0fad2
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_performance_bond
 field_name: field_performance_bond
 entity_type: node
-type: text
+type: string
 settings:
-  max_length: 10
-module: text
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

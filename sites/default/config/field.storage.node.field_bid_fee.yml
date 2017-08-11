@@ -1,17 +1,18 @@
-uuid: 1b798c48-4383-4d7d-8b7d-73f4efd470bc
+uuid: 4d2e04ce-52d7-4559-b62f-ad28cd58ca3e
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_bid_fee
 field_name: field_bid_fee
 entity_type: node
-type: text
+type: string
 settings:
-  max_length: 10
-module: text
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

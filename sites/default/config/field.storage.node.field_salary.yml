@@ -1,17 +1,18 @@
-uuid: a4282cd0-b3a9-44bf-9af4-2efbd63a66cb
+uuid: 36fc9dad-d8cd-4bf7-81ff-62922d8afd0c
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_salary
 field_name: field_salary
 entity_type: node
-type: text
+type: string
 settings:
-  max_length: 20
-module: text
+  max_length: 10
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

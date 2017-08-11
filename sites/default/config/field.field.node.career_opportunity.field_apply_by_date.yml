@@ -1,15 +1,15 @@
-uuid: effe3e23-1dc9-40fd-96dd-1e3683203e95
+uuid: 2f5671e8-d42c-49f0-8f44-2d998fea404e
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_salary
+    - field.storage.node.field_apply_by_date
     - node.type.career_opportunity
-id: node.career_opportunity.field_salary
-field_name: field_salary
+id: node.career_opportunity.field_apply_by_date
+field_name: field_apply_by_date
 entity_type: node
 bundle: career_opportunity
-label: Salary
+label: 'Apply by date'
 description: ''
 required: true
 translatable: false

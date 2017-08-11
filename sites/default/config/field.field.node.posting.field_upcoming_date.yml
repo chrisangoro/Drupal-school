@@ -1,18 +1,18 @@
-uuid: 88aa8efa-3ee5-4860-b5fe-e3518a9d3ea1
+uuid: 56361b23-61a9-4ca7-8294-959499d22dd3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_posted_date
+    - field.storage.node.field_upcoming_date
     - node.type.posting
   module:
     - datetime
-id: node.posting.field_posted_date
-field_name: field_posted_date
+id: node.posting.field_upcoming_date
+field_name: field_upcoming_date
 entity_type: node
 bundle: posting
-label: 'posted date'
-description: 'The date that the posting was posted.'
+label: 'Post date'
+description: ''
 required: true
 translatable: true
 default_value: {  }

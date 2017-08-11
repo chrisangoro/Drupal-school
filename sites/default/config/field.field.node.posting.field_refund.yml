@@ -1,12 +1,10 @@
-uuid: fcb1b353-c352-40e1-b61c-805bbd866647
+uuid: dd578000-8aa5-4656-beb7-3b47eb3cc941
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_refund
     - node.type.posting
-  module:
-    - text
 id: node.posting.field_refund
 field_name: field_refund
 entity_type: node
@@ -15,10 +13,7 @@ label: Refund
 description: ''
 required: true
 translatable: false
-default_value:
-  -
-    value: 'Not Applicable'
-    format: basic_html
+default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: string

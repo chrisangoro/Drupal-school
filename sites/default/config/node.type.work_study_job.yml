@@ -1,4 +1,4 @@
-uuid: 4099091c-0ebb-4a05-8f99-b11e985548fc
+uuid: c307f9a9-9bcf-4498-9221-b6bf797fd2f0
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ third_party_settings:
     parent: ''
 name: 'Work-Study job'
 type: work_study_job
-description: 'A unit of the listing of the work-study job opportunity.'
+description: 'Position for a Job-study opportunity. '
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

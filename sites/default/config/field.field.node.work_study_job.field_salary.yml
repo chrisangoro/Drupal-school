@@ -1,15 +1,16 @@
-uuid: 45b88ee9-c3af-46e7-baa0-11d58b2433e6
+uuid: 704db1ed-331e-4adb-91f6-880614a7cef4
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_salary
     - node.type.work_study_job
-id: node.work_study_job.title
-field_name: title
+id: node.work_study_job.field_salary
+field_name: field_salary
 entity_type: node
 bundle: work_study_job
-label: 'Job title'
-description: ''
+label: 'Pay rate'
+description: 'Ex: $8.00/hr'
 required: true
 translatable: true
 default_value: {  }

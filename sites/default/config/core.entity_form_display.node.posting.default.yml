@@ -1,22 +1,21 @@
-uuid: 9655b984-d45e-4ca7-a0a9-b781a0c117de
+uuid: 94e0f7ac-51bc-4595-9c55-86c8bec92af7
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.posting.field_additional_info
     - field.field.node.posting.field_bid_bond
     - field.field.node.posting.field_bid_fee
-    - field.field.node.posting.field_department
-    - field.field.node.posting.field_description
     - field.field.node.posting.field_due_date
-    - field.field.node.posting.field_more_info
     - field.field.node.posting.field_performance_bond
-    - field.field.node.posting.field_posted_date
     - field.field.node.posting.field_refund
+    - field.field.node.posting.field_short_title
+    - field.field.node.posting.field_type
+    - field.field.node.posting.field_upcoming_date
     - node.type.posting
   module:
     - datetime
     - path
-    - text
 id: node.posting.default
 targetEntityType: node
 bundle: posting
@@ -28,13 +27,21 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_additional_info:
+    weight: 39
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_bid_bond:
     weight: 35
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
     region: content
   field_bid_fee:
     weight: 37
@@ -42,23 +49,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_department:
-    weight: 32
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_description:
-    weight: 33
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
+    type: string_textfield
     region: content
   field_due_date:
     weight: 34
@@ -66,27 +57,13 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_more_info:
-    weight: 39
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
   field_performance_bond:
     weight: 36
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
-    region: content
-  field_posted_date:
-    weight: 31
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
+    type: string_textfield
     region: content
   field_refund:
     weight: 38
@@ -94,7 +71,27 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
+    region: content
+  field_short_title:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type:
+    weight: 33
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_upcoming_date:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
     region: content
   langcode:
     type: language_select

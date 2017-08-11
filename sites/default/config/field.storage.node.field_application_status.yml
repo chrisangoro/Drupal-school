@@ -1,17 +1,27 @@
-uuid: 125efedc-54c9-48a0-9fe2-50e658501b8a
+uuid: 1d32e19b-d69a-43a5-a238-af8f9112d4ee
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
+    - options
 id: node.field_application_status
 field_name: field_application_status
 entity_type: node
-type: text
+type: list_string
 settings:
-  max_length: 50
-module: text
+  allowed_values:
+    -
+      value: 'Accepting Applications'
+      label: 'Accepting Applications'
+    -
+      value: 'Reviewing Applications'
+      label: 'Reviewing Applications'
+    -
+      value: 'Currently Interviewing'
+      label: 'Currently Interviewing'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

@@ -1,4 +1,4 @@
-uuid: ee0fac7f-befb-45cf-beba-14589728a7cb
+uuid: 01b4fa2a-7351-45f2-ac36-dbf991feab6c
 langcode: en
 status: true
 dependencies:
@@ -16,13 +16,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_bid_bond: true
-  field_bid_fee: true
-  field_department: true
-  field_description: true
-  field_due_date: true
-  field_more_info: true
-  field_performance_bond: true
-  field_posted_date: true
-  field_refund: true
   langcode: true

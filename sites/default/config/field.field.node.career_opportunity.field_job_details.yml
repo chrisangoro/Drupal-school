@@ -1,0 +1,21 @@
+uuid: bdae37b2-a617-47b8-8a68-ac45f1e379db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_details
+    - node.type.career_opportunity
+  module:
+    - text
+id: node.career_opportunity.field_job_details
+field_name: field_job_details
+entity_type: node
+bundle: career_opportunity
+label: 'Job Details'
+description: 'Use this field to make a summary of the job and to show additional information needed like required qualifications, certificates, licenses and registrations.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

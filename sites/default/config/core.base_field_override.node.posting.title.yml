@@ -1,4 +1,4 @@
-uuid: 77a2e435-5715-4a09-9174-de60c0244b9e
+uuid: 12355397-0a85-4398-8ac7-081152efc744
 langcode: en
 status: true
 dependencies:
@@ -8,7 +8,7 @@ id: node.posting.title
 field_name: title
 entity_type: node
 bundle: posting
-label: 'Proposal number'
+label: Description
 description: ''
 required: true
 translatable: true

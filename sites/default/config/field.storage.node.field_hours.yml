@@ -1,4 +1,4 @@
-uuid: 638dce05-59b4-43d8-a4b9-01250071dc16
+uuid: 70dac0c5-87fa-4097-ae47-3ba731f5cc09
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,11 @@ dependencies:
 id: node.field_hours
 field_name: field_hours
 entity_type: node
-type: integer
+type: string
 settings:
-  unsigned: false
-  size: normal
+  max_length: 20
+  is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1

@@ -1,4 +1,4 @@
-uuid: 6b5c5edb-30e0-4d9e-ac8a-5fdd14dda97a
+uuid: b17b3cb2-2f30-46a9-96df-6d80f4845c6c
 langcode: en
 status: true
 dependencies:
@@ -8,10 +8,10 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: posting
+name: Posting
 type: posting
-description: 'Use posting for current postings available.'
+description: 'Use to post some needs of the college that can be outsourced (ex: purchasing machinery, using an external service).'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
 display_submitted: false

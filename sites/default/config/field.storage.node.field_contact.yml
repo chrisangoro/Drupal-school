@@ -1,17 +1,18 @@
-uuid: 2ff98f7a-0ac6-46c5-8267-230c3c3c8942
+uuid: b07a1d23-e47d-40b4-ab4f-96c8e10a0ccb
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_contact
 field_name: field_contact
 entity_type: node
-type: text
+type: string
 settings:
-  max_length: 50
-module: text
+  max_length: 40
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

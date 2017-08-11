@@ -1,21 +1,19 @@
-uuid: 04f15449-3ff7-4f80-bf06-2b92a276ccc0
+uuid: 0736a880-c5cf-42a8-94e7-c50e41bb35b3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_due_date
+    - field.storage.node.field_additional_info
     - node.type.posting
-  module:
-    - datetime
-id: node.posting.field_due_date
-field_name: field_due_date
+id: node.posting.field_additional_info
+field_name: field_additional_info
 entity_type: node
 bundle: posting
-label: 'Due date'
+label: 'Additional info'
 description: ''
 required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: datetime
+field_type: string

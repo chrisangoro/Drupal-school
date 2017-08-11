@@ -1,18 +1,21 @@
-uuid: 45b88ee9-c3af-46e7-baa0-11d58b2433e6
+uuid: 2a4d9999-9722-415f-b256-e363b7be46c0
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_upcoming_date
     - node.type.work_study_job
-id: node.work_study_job.title
-field_name: title
+  module:
+    - datetime
+id: node.work_study_job.field_upcoming_date
+field_name: field_upcoming_date
 entity_type: node
 bundle: work_study_job
-label: 'Job title'
+label: 'Posted date'
 description: ''
 required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: datetime

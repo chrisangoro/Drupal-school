@@ -1,17 +1,24 @@
-uuid: d3f74de6-6151-4ab1-a101-3b20925c21d7
+uuid: 2815aa16-dfef-41cf-8215-6a9f285c7b68
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - text
+    - options
 id: node.field_position_type
 field_name: field_position_type
 entity_type: node
-type: text
+type: list_string
 settings:
-  max_length: 30
-module: text
+  allowed_values:
+    -
+      value: Full-Time
+      label: Full-Time
+    -
+      value: Part-Time
+      label: Part-Time
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true
