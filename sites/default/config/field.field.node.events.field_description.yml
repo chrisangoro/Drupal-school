@@ -1,0 +1,21 @@
+uuid: 6194be59-28d6-4840-8f67-2a171981c57c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_description
+    - node.type.events
+  module:
+    - text
+id: node.events.field_description
+field_name: field_description
+entity_type: node
+bundle: events
+label: Description
+description: '(OPTIONAL) Field to enter text for a description for the upcoming event.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
