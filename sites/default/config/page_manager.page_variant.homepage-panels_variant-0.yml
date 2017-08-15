@@ -1,0 +1,105 @@
+uuid: 765c7eb8-72b2-4230-98f1-0d41ab2ef844
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.homepage
+    - views.view.events_home
+    - views.view.news_home
+    - views.view.slider
+    - views.view.student_spotlight
+  content:
+    - 'block_content:basic:37009248-ef0a-4ce4-aa3a-85e58cfd489f'
+    - 'block_content:basic:db867a25-4132-47d4-a1eb-7b8ebcdd799c'
+  module:
+    - block_content
+    - panels
+    - views
+id: homepage-panels_variant-0
+label: Panels_homepage_ipe
+variant: panels_variant
+variant_settings:
+  blocks:
+    0d28217a-2370-4a51-b7cb-c291c4205ac3:
+      id: 'views_block:slider-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '1'
+      region: top
+      weight: -1
+      uuid: 0d28217a-2370-4a51-b7cb-c291c4205ac3
+      context_mapping: {  }
+    efe9f665-01d6-44c5-ad3f-fbd4076a2a43:
+      id: 'views_block:student_spotlight-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: '1'
+      region: first_above
+      weight: 1
+      uuid: efe9f665-01d6-44c5-ad3f-fbd4076a2a43
+      context_mapping: {  }
+    e7df7976-1ab2-49b8-b98c-60434797ee46:
+      id: 'views_block:news_home-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '2'
+      region: second_above
+      weight: 1
+      uuid: e7df7976-1ab2-49b8-b98c-60434797ee46
+      context_mapping: {  }
+    9f91bc53-d5be-4a51-9b19-327b800a8d92:
+      id: 'block_content:37009248-ef0a-4ce4-aa3a-85e58cfd489f'
+      label: 'Featured news section title'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: top
+      weight: 0
+      uuid: 9f91bc53-d5be-4a51-9b19-327b800a8d92
+      context_mapping: {  }
+    c7729ef7-c6fa-4faa-8e2c-65cb097840c0:
+      id: 'block_content:db867a25-4132-47d4-a1eb-7b8ebcdd799c'
+      label: 'Upcoming events section title'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: middle
+      weight: -2
+      uuid: c7729ef7-c6fa-4faa-8e2c-65cb097840c0
+      context_mapping: {  }
+    823c2f6e-f05f-4f86-91f0-239d4316a196:
+      id: 'views_block:events_home-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: middle
+      weight: -1
+      uuid: 823c2f6e-f05f-4f86-91f0-239d4316a196
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 4ad07975-4869-4431-a6e2-41909be00802
+  label: null
+  weight: 0
+  layout: layout_twocol_bricks
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: homepage-panels_variant-0
+  builder: ipe
+page: homepage
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

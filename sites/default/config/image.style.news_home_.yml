@@ -1,0 +1,15 @@
+uuid: d8c60530-d364-486b-87f7-2dcb5ae018ce
+langcode: en
+status: true
+dependencies: {  }
+name: news_home_
+label: 'News home image'
+effects:
+  8f2cee50-859c-4517-9946-a6d8f526cd26:
+    uuid: 8f2cee50-859c-4517-9946-a6d8f526cd26
+    id: image_scale
+    weight: 1
+    data:
+      width: 370
+      height: 370
+      upscale: true
