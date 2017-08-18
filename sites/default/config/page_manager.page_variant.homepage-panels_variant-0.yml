@@ -1,4 +1,4 @@
-uuid: 765c7eb8-72b2-4230-98f1-0d41ab2ef844
+uuid: bf63a132-f722-412e-bc15-fcfc3fbb73a7
 langcode: en
 status: true
 dependencies:
@@ -8,91 +8,99 @@ dependencies:
     - views.view.news_home
     - views.view.slider
     - views.view.student_spotlight
-  content:
-    - 'block_content:basic:37009248-ef0a-4ce4-aa3a-85e58cfd489f'
-    - 'block_content:basic:db867a25-4132-47d4-a1eb-7b8ebcdd799c'
   module:
-    - block_content
     - panels
     - views
+    - webform
 id: homepage-panels_variant-0
-label: Panels_homepage_ipe
+label: home
 variant: panels_variant
 variant_settings:
   blocks:
-    0d28217a-2370-4a51-b7cb-c291c4205ac3:
-      id: 'views_block:slider-block_1'
-      label: ''
-      provider: views
+    95defcfc-f223-4801-94bb-8be17a8a53c8:
+      id: 'block_content:36a4875c-0992-4378-9c87-d1e00d238ac9'
+      label: 'Featured news section title'
+      provider: block_content
       label_display: '0'
-      views_label: ''
-      items_per_page: '1'
-      region: top
-      weight: -1
-      uuid: 0d28217a-2370-4a51-b7cb-c291c4205ac3
+      region: content
+      weight: 2
+      status: true
+      info: ''
+      view_mode: full
+      uuid: 95defcfc-f223-4801-94bb-8be17a8a53c8
       context_mapping: {  }
-    efe9f665-01d6-44c5-ad3f-fbd4076a2a43:
+    019e3367-86f1-409a-9409-513d8680a672:
       id: 'views_block:student_spotlight-block_1'
       label: ''
       provider: views
       label_display: visible
       views_label: ''
       items_per_page: '1'
-      region: first_above
-      weight: 1
-      uuid: efe9f665-01d6-44c5-ad3f-fbd4076a2a43
+      region: content
+      weight: 3
+      uuid: 019e3367-86f1-409a-9409-513d8680a672
       context_mapping: {  }
-    e7df7976-1ab2-49b8-b98c-60434797ee46:
+    aaf92202-b52d-4662-a327-2fbb5c343454:
       id: 'views_block:news_home-block_1'
       label: ''
       provider: views
       label_display: '0'
       views_label: ''
       items_per_page: '2'
-      region: second_above
-      weight: 1
-      uuid: e7df7976-1ab2-49b8-b98c-60434797ee46
+      region: content
+      weight: 4
+      uuid: aaf92202-b52d-4662-a327-2fbb5c343454
       context_mapping: {  }
-    9f91bc53-d5be-4a51-9b19-327b800a8d92:
-      id: 'block_content:37009248-ef0a-4ce4-aa3a-85e58cfd489f'
-      label: 'Featured news section title'
-      provider: block_content
-      label_display: '0'
-      status: true
-      info: ''
-      view_mode: full
-      region: top
-      weight: 0
-      uuid: 9f91bc53-d5be-4a51-9b19-327b800a8d92
-      context_mapping: {  }
-    c7729ef7-c6fa-4faa-8e2c-65cb097840c0:
-      id: 'block_content:db867a25-4132-47d4-a1eb-7b8ebcdd799c'
+    6fc985ed-3de4-41b2-938b-e46fbb091961:
+      id: 'block_content:f81670c8-9203-4712-b70a-a9ebbfeaaf64'
       label: 'Upcoming events section title'
       provider: block_content
       label_display: '0'
+      region: content
+      weight: 5
       status: true
       info: ''
       view_mode: full
-      region: middle
-      weight: -2
-      uuid: c7729ef7-c6fa-4faa-8e2c-65cb097840c0
+      uuid: 6fc985ed-3de4-41b2-938b-e46fbb091961
       context_mapping: {  }
-    823c2f6e-f05f-4f86-91f0-239d4316a196:
+    aae00e6d-ff0d-4d09-8d82-30d6741d8c20:
       id: 'views_block:events_home-block_1'
       label: ''
       provider: views
+      label_display: '0'
+      views_label: ''
+      items_per_page: '3'
+      region: content
+      weight: 6
+      uuid: aae00e6d-ff0d-4d09-8d82-30d6741d8c20
+      context_mapping: {  }
+    209b561e-7c26-4a8f-a6a2-c8b30192cc31:
+      id: webform_block
+      label: 'NEED MORE INFO'
+      provider: webform
       label_display: visible
+      webform_id: need_more_info
+      default_data: ''
+      region: content
+      weight: 7
+      uuid: 209b561e-7c26-4a8f-a6a2-c8b30192cc31
+      context_mapping: {  }
+    de635387-7ec3-43f2-bd48-c4b94561e42d:
+      id: 'views_block:slider-block_1'
+      label: ''
+      provider: views
+      label_display: '0'
       views_label: ''
       items_per_page: none
-      region: middle
-      weight: -1
-      uuid: 823c2f6e-f05f-4f86-91f0-239d4316a196
+      region: content
+      weight: 1
+      uuid: de635387-7ec3-43f2-bd48-c4b94561e42d
       context_mapping: {  }
   id: panels_variant
-  uuid: 4ad07975-4869-4431-a6e2-41909be00802
+  uuid: 09ebe512-8eaf-4809-ad5a-f3d965a7e788
   label: null
   weight: 0
-  layout: layout_twocol_bricks
+  layout: layout_onecol
   layout_settings: {  }
   page_title: ''
   storage_type: page_manager

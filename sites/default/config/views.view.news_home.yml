@@ -7,9 +7,13 @@ dependencies:
     - field.storage.node.field_short_title
     - image.style.news_home_
     - node.type.news_article
+    - taxonomy.vocabulary.news_type
+  content:
+    - 'taxonomy_term:news_type:6b551055-c99a-4f6e-93ca-c5d697d091c8'
   module:
     - image
     - node
+    - taxonomy
     - user
 id: news_home
 label: 'News home'
@@ -165,6 +169,50 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+        field_news_type_target_id:
+          id: field_news_type_target_id
+          table: node__field_news_type
+          field: field_news_type_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: not
+          value:
+            8: 8
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          type: select
+          limit: true
+          vid: news_type
+          hierarchy: false
+          error_message: true
+          plugin_id: taxonomy_index_tid
       sorts:
         created:
           id: created
@@ -193,6 +241,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -211,6 +260,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

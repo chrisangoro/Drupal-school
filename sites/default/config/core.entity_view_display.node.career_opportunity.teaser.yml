@@ -16,11 +16,15 @@ content:
     weight: 100
     region: content
 hidden:
+  body: true
   field_application_status: true
+  field_apply_by_date: true
+  field_bac: true
   field_background_check: true
   field_certificates: true
   field_due_date: true
   field_instructions: true
+  field_job_details: true
   field_position_type: true
   field_posted_date: true
   field_required_qualifications: true

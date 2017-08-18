@@ -80,7 +80,7 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-low
             nothing:
               sortable: false
               default_sort_order: asc
@@ -94,7 +94,7 @@ display:
               align: ''
               separator: ''
               empty_column: false
-              responsive: ''
+              responsive: priority-medium
             body:
               sortable: false
               default_sort_order: asc

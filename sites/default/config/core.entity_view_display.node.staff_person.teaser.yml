@@ -19,6 +19,10 @@ hidden:
   field_department: true
   field_email: true
   field_mailbox: true
+  field_person_email: true
   field_phone: true
+  field_phone_ext: true
+  field_position: true
   field_room: true
+  field_type: true
   langcode: true

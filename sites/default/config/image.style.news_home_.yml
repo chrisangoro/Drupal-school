@@ -1,15 +1,16 @@
 uuid: d8c60530-d364-486b-87f7-2dcb5ae018ce
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - focal_point
 name: news_home_
 label: 'News home image'
 effects:
-  8f2cee50-859c-4517-9946-a6d8f526cd26:
-    uuid: 8f2cee50-859c-4517-9946-a6d8f526cd26
-    id: image_scale
+  b4771bfe-f582-4992-a8d0-3ae15a435aa5:
+    uuid: b4771bfe-f582-4992-a8d0-3ae15a435aa5
+    id: focal_point_scale_and_crop
     weight: 1
     data:
-      width: 370
-      height: 370
-      upscale: true
+      width: 600
+      height: 600

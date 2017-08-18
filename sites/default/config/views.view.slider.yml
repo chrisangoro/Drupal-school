@@ -1,4 +1,4 @@
-uuid: 17bb48af-9013-4049-884a-ffd9ba263284
+uuid: 9a4c5ca0-2b56-4e12-ba0a-d5ef36c40769
 langcode: en
 status: true
 dependencies:
@@ -57,9 +57,8 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 0
           offset: 0
       style:
         type: slick
@@ -69,32 +68,31 @@ display:
           skin: fullwidth
           layout: ''
           caption:
-            nothing: nothing
-            title: '0'
-            body: '0'
+            title: title
+            body: body
+            field_url: field_url
             field_image: '0'
-            field_url: '0'
           optionset_thumbnail: ''
           skin_thumbnail: ''
           thumbnail_caption: ''
           grid_header: ''
-          grid: 3
-          grid_medium: 3
-          grid_small: 3
-          visible_items: 1
-          preserve_keys: true
+          grid: null
+          grid_medium: null
+          grid_small: null
+          visible_items: null
+          preserve_keys: false
           image: field_image
           thumbnail: ''
           overlay: ''
           title: ''
-          link: field_url
+          link: ''
           class: ''
           id: ''
           override: true
           overridables:
-            arrows: arrows
+            autoplay: autoplay
             dots: dots
-            autoplay: '0'
+            arrows: '0'
             draggable: '0'
             infinite: '0'
             mouseWheel: '0'
@@ -113,7 +111,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -178,7 +176,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -240,7 +238,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -304,7 +302,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: true
+          exclude: false
           alter:
             alter_text: false
             text: ''
@@ -363,73 +361,44 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: true
-            text: "{{ title }}\n{{ body }}"
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: false
-          plugin_id: custom
       filters:
-        status:
-          value: '1'
-          table: node_field_data
-          field: status
-          plugin_id: boolean
-          entity_type: node
-          entity_field: status
-          id: status
-          expose:
-            operator: ''
-          group: 1
         type:
           id: type
           table: node_field_data
           field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
           value:
             slider: slider
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -455,8 +424,8 @@ display:
       empty: {  }
       relationships: {  }
       arguments: {  }
-      display_extenders:
-        metatag_display_extender: {  }
+      display_extenders: {  }
+      use_ajax: false
     cache_metadata:
       max-age: -1
       contexts:

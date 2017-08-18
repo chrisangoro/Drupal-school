@@ -1,0 +1,8 @@
+uuid: a29fc588-acd7-451e-9638-557c145482d5
+langcode: en
+status: true
+dependencies: {  }
+id: from_block
+label: 'From Block'
+revision: 0
+description: 'A basic block in which you can have a from and a html text.'

@@ -16,4 +16,13 @@ content:
     weight: 100
     region: content
 hidden:
+  field_additional_info: true
+  field_bid_bond: true
+  field_bid_fee: true
+  field_due_date: true
+  field_performance_bond: true
+  field_refund: true
+  field_short_title: true
+  field_type: true
+  field_upcoming_date: true
   langcode: true

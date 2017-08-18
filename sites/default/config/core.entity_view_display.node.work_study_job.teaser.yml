@@ -26,4 +26,13 @@ content:
     weight: 100
     region: content
 hidden:
+  field_contact: true
+  field_hours: true
+  field_location: true
+  field_person_email: true
+  field_phone_ext: true
+  field_salary: true
+  field_term: true
+  field_type: true
+  field_upcoming_date: true
   langcode: true

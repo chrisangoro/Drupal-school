@@ -11,20 +11,20 @@ id: default
 name: default
 label: Default
 weight: -10
-group: ''
-skin: default
-breakpoints: 0
+group: main
+skin: fullwidth
+breakpoints: 1
 optimized: false
 options:
-  options__active_tab: ''
+  options__active_tab: edit-options-settings
   settings:
-    mobileFirst: false
+    mobileFirst: true
     asNavFor: ''
     accessibility: true
-    adaptiveHeight: false
-    autoplay: false
+    adaptiveHeight: true
+    autoplay: true
     autoplaySpeed: 3000
-    pauseOnHover: true
+    pauseOnHover: false
     pauseOnDotsHover: false
     arrows: true
     prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>'
@@ -32,7 +32,7 @@ options:
     downArrow: false
     downArrowTarget: ''
     downArrowOffset: 0
-    centerMode: false
+    centerMode: true
     centerPadding: 50px
     dots: false
     dotsClass: slick-dots
@@ -40,7 +40,7 @@ options:
     draggable: true
     fade: false
     focusOnSelect: false
-    infinite: true
+    infinite: false
     initialSlide: 0
     lazyLoad: ondemand
     mouseWheel: false
@@ -68,3 +68,38 @@ options:
     vertical: false
     verticalSwiping: false
     waitForAnimate: true
+  responsives:
+    responsive:
+      -
+        breakpoint: 415
+        unslick: false
+        settings:
+          adaptiveHeight: true
+          autoplay: false
+          autoplaySpeed: 3000
+          pauseOnHover: false
+          pauseOnDotsHover: false
+          arrows: false
+          centerMode: false
+          centerPadding: 50px
+          dots: true
+          draggable: true
+          fade: false
+          focusOnSelect: false
+          infinite: false
+          initialSlide: 0
+          respondTo: window
+          rows: 1
+          slidesPerRow: 1
+          slidesToShow: 1
+          slidesToScroll: 1
+          speed: 500
+          swipe: false
+          swipeToSlide: false
+          edgeFriction: 0.35
+          touchMove: false
+          touchThreshold: 5
+          variableWidth: false
+          vertical: false
+          verticalSwiping: false
+          waitForAnimate: false
