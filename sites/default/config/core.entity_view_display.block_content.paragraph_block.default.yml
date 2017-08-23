@@ -4,20 +4,34 @@ status: true
 dependencies:
   config:
     - block_content.type.paragraph_block
-    - field.field.block_content.paragraph_block.body
+    - field.field.block_content.paragraph_block.field_paragraph_block
+    - field.field.block_content.paragraph_block.field_responsive_image
+    - responsive_image.styles.responsive_background
   module:
-    - text
+    - entity_reference_revisions
+    - responsive_image
 id: block_content.paragraph_block.default
 targetEntityType: block_content
 bundle: paragraph_block
 mode: default
 content:
-  body:
+  field_paragraph_block:
+    type: entity_reference_revisions_entity_view
+    weight: 1
     label: hidden
-    type: text_default
-    weight: 0
-    settings: {  }
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
+    region: content
+  field_responsive_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: responsive_background
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
     region: content
 hidden:
   langcode: true

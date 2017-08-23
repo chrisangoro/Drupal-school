@@ -10,9 +10,10 @@ dependencies:
     - field.field.node.event.field_type
     - field.field.node.event.field_upcoming_date
     - node.type.event
+    - responsive_image.styles.responsive_auto
   module:
     - datetime
-    - image
+    - responsive_image
     - text
     - user
 id: node.event.default
@@ -31,10 +32,10 @@ content:
     weight: 105
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: responsive_auto
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_location:
     weight: 106

@@ -1,0 +1,25 @@
+uuid: 326e8119-d620-44ed-8a5f-5464350fc222
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.double_paragraph
+    - field.field.block_content.double_paragraph.field_nested_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.double_paragraph.default
+targetEntityType: block_content
+bundle: double_paragraph
+mode: default
+content:
+  field_nested_paragraph:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

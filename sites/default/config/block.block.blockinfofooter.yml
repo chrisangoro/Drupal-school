@@ -1,0 +1,25 @@
+uuid: 7d7be7b0-0761-4437-a0e1-d938a98e04d3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:paragraph_block:cbcdeac0-1bfa-485b-a1ec-1146bd66eb27'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: blockinfofooter
+theme: bartik
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:cbcdeac0-1bfa-485b-a1ec-1146bd66eb27'
+settings:
+  id: 'block_content:cbcdeac0-1bfa-485b-a1ec-1146bd66eb27'
+  label: 'Block + Info footer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -8,8 +8,8 @@ dependencies:
     - field.field.node.slider.field_url
     - node.type.slider
   module:
-    - image
     - link
+    - responsive_image
     - text
     - user
 id: node.slider.default
@@ -28,10 +28,10 @@ content:
     weight: 102
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      responsive_image_style: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_url:
     weight: 103
@@ -48,5 +48,7 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

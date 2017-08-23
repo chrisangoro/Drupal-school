@@ -1,23 +1,20 @@
-uuid: de68e002-1860-4e2b-aa6f-174f46be617f
+uuid: cfa95964-37f7-4e36-8b0c-9fe8417a816d
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.paragraph_block
-    - field.field.block_content.paragraph_block.field_paragraph_block
-    - field.field.block_content.paragraph_block.field_responsive_image
-    - image.style.thumbnail
+    - block_content.type.double_paragraph
+    - field.field.block_content.double_paragraph.field_nested_paragraph
   module:
-    - image
     - paragraphs
-id: block_content.paragraph_block.default
+id: block_content.double_paragraph.default
 targetEntityType: block_content
-bundle: paragraph_block
+bundle: double_paragraph
 mode: default
 content:
-  field_paragraph_block:
+  field_nested_paragraph:
     type: entity_reference_paragraphs
-    weight: 27
+    weight: 26
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -26,14 +23,6 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-    region: content
-  field_responsive_image:
-    weight: 28
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
     region: content
   info:
     type: string_textfield

@@ -43,6 +43,17 @@
   }
 }
 @media all and (min-width: 851px) {
+/*Custom code for separating left and right sides of the themes*/
+  .footer_left .region{
+    width: 66.66%;
+    padding-top: 0.45em;
+  }
+  .footer_right .region{
+    width: 30%;
+    float: right;
+  }
+/*End of custom code*/
+  .footer
   .site-footer__top .region {
     width: 24%;
     padding: 0 0.65%;

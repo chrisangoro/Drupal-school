@@ -6,9 +6,10 @@ dependencies:
     - field.field.node.brand.field_image
     - field.field.node.brand.field_url
     - node.type.brand
+    - responsive_image.styles.responsive_auto
   module:
-    - image
     - link
+    - responsive_image
     - user
 id: node.brand.default
 targetEntityType: node
@@ -19,10 +20,10 @@ content:
     weight: 101
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: responsive_auto
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_url:
     weight: 102
