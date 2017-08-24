@@ -18,7 +18,7 @@ global-styling:
       css/components/field.css: {}
       css/components/form.css: {}
       css/components/forum.css: {}
-      css/components/header.css: {}
+      css/header.css: {}
       css/components/help.css: {}
       css/components/highlighted.css: {}
       css/components/item-list.css: {}

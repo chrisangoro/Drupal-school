@@ -1,31 +1,3 @@
-/**
- * @file
- * Bartik layout styling.
- */
+.layout-container{box-sizing:border-box}@media all and (min-width: 851px){.layout-container{width:100%}.slider{padding:0}}.layout-main-wrapper{min-height:300px}.layout-main{margin-top:20px;margin-bottom:40px}
 
-/**
- * Container
- */
-.layout-container {
-  /*max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;*/
-  box-sizing: border-box;
-}
-@media all and (min-width: 851px) {
-  .layout-container {
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
-
-/**
- * Main
- */
-.layout-main-wrapper {
-  min-height: 300px;
-}
-.layout-main {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
+/*# sourceMappingURL=layout.css.map */
