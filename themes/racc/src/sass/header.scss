@@ -199,16 +199,24 @@
 //   float: right;
 // }
 
+@import "variables";
+
 @media all and (min-width: 851px) {
     header{
         position: relative;
         z-index: 100;
+        background: $nav-background;
 
         div{
             .top_menu{
+                background: #f23522;
                 width: 72.6%;
                 height: 46px;
                 float: right;
+
+                ul{
+                    display: inline-block;
+                }
             }
 
             .logo{
@@ -218,14 +226,26 @@
                 position: relative;
                 float: left;
 
-                .region-header .site-branding {
+                .region-logo .site-branding {
                     //margin-top: 0.429em;
                 }
 
                 .site-branding__logo{
-                    height: 85px;
-                    width: auto;
+                    
                     margin: 9px 50px;
+                    text-decoration: none;
+
+                    border-bottom: 0px;
+
+                    :hover{
+                        border-bottom: 0;
+                    }
+
+                    img{
+                        height: 85px;
+                        width: auto;
+                        
+                    }  
                 }
             }
 

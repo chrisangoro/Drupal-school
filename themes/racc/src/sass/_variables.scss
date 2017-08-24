@@ -1,0 +1,67 @@
+//font imports
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/Raleway-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/Raleway-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../res/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+//Colors
+$racc-red: #f23522;
+$racc-red-font: #ff3333;
+$racc-white: #fff;
+$font-black: #444a5a;
+$nav-background: rgba(255, 255, 255, 0.7);
+$racc-grey1: #87888e;
+$racc-grey2: #999ba1;
+$racc-grey3: #bbbbbf;
+$racc-grey4: #cfcfd2;
+$racc-grey5: #c0bfbf;
+$racc-title: #3a4d59;
+$racc-light-black: #363636;
+$racc-footer-background: #323339;
+
+//fonts
+$racc-font: 'Raleway', sans-serif;
