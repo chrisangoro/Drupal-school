@@ -1,21 +1,31 @@
-/**
- * @file
- * Bartik layout styling.
- */
+@import "../variables";
 
-/**
- * Container
- */
+body{
+  
+  a{
+      border-bottom: 0;
+  }
+
+  :hover{
+    text-decoration: none;
+    border-bottom: 0;
+  }
+}
+
 .layout-container {
-  /*max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;*/
+
   box-sizing: border-box;
 }
 @media all and (min-width: 851px) {
+
+  header{
+    position: relative;
+    z-index: 100;
+    background: $nav-background;
+  }
+
   .layout-container {
     width: 100%;
-    /*overflow-x: hidden;*/
   }
 
   .slider{
@@ -23,9 +33,6 @@
   }
 }
 
-/**
- * Maintheem
- */
 .layout-main-wrapper {
   min-height: 300px;
 }

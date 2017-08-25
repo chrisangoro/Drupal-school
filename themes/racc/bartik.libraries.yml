@@ -18,7 +18,9 @@ global-styling:
       css/components/field.css: {}
       css/components/form.css: {}
       css/components/forum.css: {}
-      css/header.css: {}
+      css/block/block.css: {}
+      css/menu/menu.css: {}
+      css/views/views.css: {}
       css/components/help.css: {}
       css/components/highlighted.css: {}
       css/components/item-list.css: {}
@@ -56,9 +58,8 @@ global-styling:
       css/components/image-button.css: {}
       css/components/ui-dialog.css: {}
     layout:
-      css/layout.css: {}
+      css/layout/layout.css: {}
     theme:
-      css/colors.css: {}
       css/print.css: { media: print }
 
 messages:
