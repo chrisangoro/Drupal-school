@@ -1,3 +1,80 @@
 .slider{
     margin-top: -10.2em;
+
+    .slick-list{
+        padding: 0 !important;
+    }
+
+    .slick__slide{
+        width: 100%;
+    }
+
+    .slide__constrained{
+        margin-left: 10%;
+        left: 0 !important;
+        margin-top: 21.8%;
+        width: 25%;
+    }
+
+    .slide__caption{
+        
+
+        > a{
+            font-family: $racc-font;
+            font-size: 2em;
+            font-weight: 300;
+            text-transform: uppercase;
+            width: 10em;
+            letter-spacing: -0.5px;
+            line-height: 1.15;
+            margin-bottom: 1.5em;
+            color: white; 
+        }
+
+        a:hover{
+            color: $racc-red-font;
+        }
+
+        p{
+            margin-top: 1em;
+            color: white;
+            font-size: 0.8em;
+            line-height: 1.8;
+
+            a{
+                color: white;
+                font-size: 0.8em;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .slick-dots{
+        position: relative !important;
+        margin-top: -35.7%;
+        margin-bottom: 30%;
+        text-align: left;
+        padding-left: 10.5%;
+
+        li{
+            padding-right: 4.2em;
+
+            button{
+                //margin-right: 1em;
+            }
+            button::before{
+                //margin-right: 1em;
+                content:url(../../images/NotActiveSlide.png);
+            }
+        }
+
+        .slick-active{
+            padding-right: 4.2em;
+
+            button::before{
+                //margin-right: 1em;
+                content:url(../../images/ActiveSlide.png);
+            }
+        }
+    }
 }

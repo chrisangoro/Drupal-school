@@ -32,6 +32,7 @@ regions:
   #sidebar_first: 'Sidebar first'
   #sidebar_second: 'Sidebar Second'
   slider: 'Slider'
+  tabs: 'tabs'
   content: Content
   footer_first: 'Footer first'
   footer_second: 'Footer second'

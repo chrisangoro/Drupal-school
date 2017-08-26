@@ -20,6 +20,7 @@ global-styling:
       css/components/forum.css: {}
       css/block/block.css: {}
       css/menu/menu.css: {}
+      css/layout/typography.css: {}
       css/views/views.css: {}
       css/components/help.css: {}
       css/components/highlighted.css: {}

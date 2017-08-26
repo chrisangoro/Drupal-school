@@ -1,6 +1,8 @@
 @import "../variables";
 
 body{
+
+  overflow-x: hidden;
   
   a{
       border-bottom: 0;
@@ -29,6 +31,10 @@ body{
   }
 
   .slider{
+    padding: 0;
+  }
+
+  .tabs{
     padding: 0;
   }
 }

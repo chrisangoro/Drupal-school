@@ -73,6 +73,11 @@
               {{ page.slider }}
             </div>
           {% endif %}
+          {% if page.tabs %}
+            <div class="tabs">
+              {{ page.tabs }}
+            </div>
+          {% endif %}
           <section class="section">
             <a id="main-content" tabindex="-1"></a>
             {{ page.content }}
