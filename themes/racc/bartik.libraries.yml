@@ -63,6 +63,10 @@ global-styling:
     theme:
       css/print.css: { media: print }
 
+  js:
+    component:
+      src/js/tabs.js: {}
+
 messages:
   version: VERSION
   css:
