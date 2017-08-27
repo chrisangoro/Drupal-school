@@ -1,38 +1,40 @@
-.main_menu{
-    width: 72.5%;
-    left: 6.5%;
-    display: inline-block;
-    //height: 60px;
-    position: relative;
+@media all and (min-width: 851px) {
+    .main_menu{
+        width: 72.5%;
+        left: 6.5%;
+        display: inline-block;
+        //height: 60px;
+        position: relative;
 
-    ul{
-        font-family: $racc-font;
-        font-weight: 500;
-        //margin: 0;
-        //padding: 0;
-        //padding-top: 6px;
-        //margin-left: -7px;
-        color: $font-black;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+        ul{
+            font-family: $racc-font;
+            font-weight: 500;
+            //margin: 0;
+            //padding: 0;
+            //padding-top: 6px;
+            //margin-left: -7px;
+            color: $font-black;
+            letter-spacing: 1px;
+            text-transform: uppercase;
 
-        li{
-            a{
-                padding-right: 2.7em;
-                color: black;
-                font-size: 1em;
-                font-weight: 600;
-                letter-spacing: 0.15em;
-            }
-
-            ul{
-                background: white;
-
-                li{
+            li{
+                a{
+                    padding-right: 2.7em;
                     color: black;
                     font-size: 1em;
-                    font-weight: 400;
+                    font-weight: 600;
                     letter-spacing: 0.15em;
+                }
+
+                ul{
+                    background: white;
+
+                    li{
+                        color: black;
+                        font-size: 1em;
+                        font-weight: 400;
+                        letter-spacing: 0.15em;
+                    }
                 }
             }
         }

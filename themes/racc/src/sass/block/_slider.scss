@@ -1,68 +1,53 @@
+.slick img, .slick iframe{
+    height: 70vh;
+    width: auto;
+}
+
 .slider{
-    margin-top: -10.2em;
-
-    .slick-list{
-        padding: 0 !important;
-    }
-
-    .slick__slide{
-        width: 100%;
-    }
-
-    .slide__constrained{
-        margin-left: 9.8%;
-        left: 0 !important;
-        margin-top: 22.9%;
-        width: 40%;
-    }
+    width: 100%;
+    margin-top: -6.5em;
+    height: 600px;
+    position: absolute;
+    z-index: 1;
+    display: block;
 
     .slide__caption{
-        
 
-        > a{
-            font-family: $racc-font;
-            font-size: 2em;
+        a{
+            font-size: 150%;
             font-weight: 300;
+            color: white;
             text-transform: uppercase;
-            width: 10em;
-            line-height: 1.15;
-            margin-bottom: 1.5em;
-            color: white; 
-        }
-
-        a:hover{
-            color: $racc-red-font;
+            line-height: 1.3;
         }
 
         p{
-            margin-top: 1em;
-            color: white;
-            font-size: 0.8em;
-            line-height: 1.8;
-
-            a{
-                color: white;
-                font-size: 0.8em;
-                text-decoration: underline;
-            }
+            display: none;
         }
     }
 
+    .slide__constrained{
+        position: absolute;
+        width: 100%;
+        padding: 0 8vw;
+        margin-top: 41vh;
+    }
+
+    .slick--skin--fullwidth .slide__media img{
+        min-width: 100%;
+        max-width: none;
+        width: auto;
+        height: 70vh;
+    }
+
     .slick-dots{
-        position: relative !important;
-        margin-top: -25%;
-        margin-bottom: 30%;
-        text-align: left;
-        padding-left: 10.5%;
+        position: relative;
+        margin-top: -15vh;
 
         li{
             padding-right: 4.2em;
 
-            button{
-                //margin-right: 1em;
-            }
             button::before{
-                //margin-right: 1em;
                 content:url(../../images/NotActiveSlide.png);
             }
         }
@@ -71,8 +56,100 @@
             padding-right: 4.2em;
 
             button::before{
-                //margin-right: 1em;
                 content:url(../../images/ActiveSlide.png);
+            }
+        }
+    }
+}
+
+@media all and (min-width: 851px) {
+    .slider{
+        margin-top: -10.2em;
+
+        .slick--skin--fullwidth .slide__media img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slick-list{
+            padding: 0 !important;
+        }
+
+        .slick__slide{
+            width: 100%;
+        }
+
+        .slick img, .slick iframe{
+            height: auto;
+            width: 100%;
+        }
+
+        .slide__constrained{
+            margin-left: 9.8%;
+            left: 0 !important;
+            margin-top: 22.9%;
+            width: 40%;
+        }
+
+        .slide__caption{
+            
+
+            > a{
+                font-family: $racc-font;
+                font-size: 2em;
+                font-weight: 300;
+                text-transform: uppercase;
+                width: 10em;
+                line-height: 1.15;
+                margin-bottom: 1.5em;
+                color: white; 
+            }
+
+            a:hover{
+                color: $racc-red-font;
+            }
+
+            p{
+                display: block;
+                margin-top: 1em;
+                color: white;
+                font-size: 0.8em;
+                line-height: 1.8;
+
+                a{
+                    color: white;
+                    font-size: 0.8em;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .slick-dots{
+            position: relative !important;
+            margin-top: -25%;
+            margin-bottom: 30%;
+            text-align: left;
+            padding-left: 10.5%;
+
+            li{
+                padding-right: 4.2em;
+
+                button{
+                    //margin-right: 1em;
+                }
+                button::before{
+                    //margin-right: 1em;
+                    content:url(../../images/NotActiveSlide.png);
+                }
+            }
+
+            .slick-active{
+                padding-right: 4.2em;
+
+                button::before{
+                    //margin-right: 1em;
+                    content:url(../../images/ActiveSlide.png);
+                }
             }
         }
     }

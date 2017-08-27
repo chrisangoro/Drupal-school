@@ -14,6 +14,17 @@ body{
   }
 }
 
+header{
+  position: relative;
+  z-index: 100;
+  background: $nav-background;
+}
+
+.tabs{
+  padding-top: 51vh;
+}
+
+
 .layout-container {
 
   box-sizing: border-box;
@@ -35,7 +46,12 @@ body{
   }
 
   .tabs{
+    padding-top: 0;
     padding: 0;
+  }
+
+  section{
+    margin-top: 34%;
   }
 }
 
