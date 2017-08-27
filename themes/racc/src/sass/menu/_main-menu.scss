@@ -1,4 +1,4 @@
-.main_menu{
+#block-mainmenu{
     display: none;
 }
 
@@ -9,6 +9,10 @@
         display: inline-block;
         //height: 60px;
         position: relative;
+
+        #block-mainmenu{
+            display: inline-block;
+        }
 
         ul{
             font-family: $racc-font;
