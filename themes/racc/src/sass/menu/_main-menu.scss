@@ -2,6 +2,44 @@
     display: none;
 }
 
+.main_menu{
+    nav{
+        display: none;
+    }
+
+    #block-responsivemenumobileicon{
+
+        #toggle-icon{
+            margin-top: 1em;
+            margin-bottom: 4em;
+            
+            span.label{
+                display: none;
+            }
+    
+            span.icon{
+                background: black !important;
+            }
+        }
+        
+        #toggle-icon::before{
+            background: black;
+        }
+
+        #toggle-icon::after{
+            background: black;
+        }
+    }
+}
+
+.mm-panles{
+    font-weight: 800;
+
+    .mm-panel{
+        font-weight: 600;
+    }
+}
+
 @media all and (min-width: 851px) {
     .main_menu{
         width: 72.5%;
