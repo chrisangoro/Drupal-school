@@ -24,6 +24,15 @@ header{
   padding-top: 51vh;
 }
 
+section{
+  position: absolute;
+  margin-top: 200%;
+  width: 100vw;
+}
+
+.site-footer{
+  display: none;
+}
 
 .layout-container {
 
@@ -51,7 +60,7 @@ header{
   }
 
   section{
-    margin-top: 34%;
+    margin-top: 100%;
   }
 }
 
