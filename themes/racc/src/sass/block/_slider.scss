@@ -31,6 +31,7 @@
         width: 100%;
         padding: 0 8vw;
         margin-top: 41vh;
+        z-index: 30;
     }
 
     .slick--skin--fullwidth .slide__media img{
@@ -38,6 +39,19 @@
         max-width: none;
         width: auto;
         height: 70vh;
+    }
+
+    .slide__media .media--image::before {
+        content: '.';
+        color: transparent;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        background: #9e9e9e;
+        background: -webkit-gradient(top,rgba(255,255,255,0) 20%,black 100%);
+        background: linear-gradient(to bottom,rgba(255,255,255,0) 20%,black 100%);
+        //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9e9e9e',endColorstr='#000000',GradientType=0);
     }
 
     .slick-dots{

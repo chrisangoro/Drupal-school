@@ -13,7 +13,7 @@
                 height: 6em;
                 width: 100vw;
                 margin-bottom: 0;
-                float: none;
+                float: left;
                 display: flex;
                 cursor: pointer;
 
@@ -155,8 +155,9 @@
                 .views-field-info{
                     height: 14.5em;
                     width: 31.1%;
+                    margin-right: 68%;
                     margin-bottom: 0;
-                    float: none;
+                    float: left;
                     display: flex;
                     cursor: pointer;
 
@@ -178,7 +179,8 @@
                     float: right;
                     background: white;
                     height: 760px;
-                    margin-top: -17.3%;
+                    position: absolute;
+                    right: 0;
 
                     .field-content{
                         .paragraph--type--images{
@@ -262,11 +264,11 @@
 
             .views-row:first-child{
                 .views-field-info{
-                    background: $racc-grey1;
+                    background: #f23522;
                 }
 
                 .views-field-field-nested-paragraph{
-                    
+
                 }
             }
 
@@ -277,7 +279,6 @@
 
                 .views-field-field-nested-paragraph{
                     display: none;
-                    margin-top: -64.8%;
                 }
             }
 
@@ -288,7 +289,6 @@
 
                 .views-field-field-nested-paragraph{
                     display: none;
-                    margin-top: -64.8%;
                 }
             }
 
@@ -299,7 +299,6 @@
 
                 .views-field-field-nested-paragraph{
                     display: none;
-                    margin-top: -66.7%;
                 }
             }
         }
