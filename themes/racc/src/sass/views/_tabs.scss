@@ -1,6 +1,7 @@
 .tabs{
-    position: absolute;
+    position: relative;
     z-index: 100;
+    margin-top: 100% !important;
 
     .views-field-field-nested-paragraph{
         display: none;
@@ -141,7 +142,7 @@
         background: white;
         position: relative;
         z-index: 100;
-        top: 50em;
+        margin-top: 50em !important;
 
         .region-tabs{
             margin-top: -0.71%;

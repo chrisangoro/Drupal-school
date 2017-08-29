@@ -5,15 +5,22 @@
 (function ($, Drupal) {
     Drupal.behaviors.myModuleBehavior = {
       attach: function (context, settings) {
-
-        console.log('holi');
         //tab info interactions
         $('.views-row:first-child .views-field-info').click(function(){
-            $('.views-row:first-child .views-field-field-nested-paragraph').show();
-            $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
-    
+
+            if ($(window).width() < 560) {
+                $('.views-row:first-child .views-field-field-nested-paragraph').toggle();
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
+            }
+             else {
+                $('.views-row:first-child .views-field-field-nested-paragraph').show();
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
+             }
+        
             $('.views-row:first-child .views-field-info').css("background-color", "#f23522");
             $('.views-row:nth-child(2) .views-field-info').css("background-color", "#999ba1");
             $('.views-row:nth-child(3) .views-field-info').css("background-color", "#bbbbbf");
@@ -21,11 +28,19 @@
         })
     
         $('.views-row:nth-child(2) .views-field-info').click(function(){
-            $('.views-row:nth-child(2) .views-field-field-nested-paragraph').show();
-            $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
-    
+            if ($(window).width() < 560) {
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').toggle();
+                $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
+            }
+            else {
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').show();
+                $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
+            }
+
             $('.views-row:nth-child(2) .views-field-info').css("background-color", "#f23522");
             $('.views-row:first-child .views-field-info').css("background-color", "#87888e");
             $('.views-row:nth-child(3) .views-field-info').css("background-color", "#bbbbbf");
@@ -33,11 +48,19 @@
         })
     
         $('.views-row:nth-child(3) .views-field-info').click(function(){
-            $('.views-row:nth-child(3) .views-field-field-nested-paragraph').show();
-            $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
-    
+            if ($(window).width() < 560) {
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').toggle();
+                $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
+            }
+            else{
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').show();
+                $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').hide(false);
+            }
+        
             $('.views-row:nth-child(3) .views-field-info').css("background-color", "#f23522");
             $('.views-row:first-child .views-field-info').css("background-color", "#87888e");
             $('.views-row:nth-child(2) .views-field-info').css("background-color", "#999ba1");
@@ -45,11 +68,19 @@
         })
     
         $('.views-row:nth-child(4) .views-field-info').click(function(){
-            $('.views-row:nth-child(4) .views-field-field-nested-paragraph').show();
-            $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
-            $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
-    
+            if ($(window).width() < 560) {
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').toggle();
+                $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
+            }
+            else{
+                $('.views-row:nth-child(4) .views-field-field-nested-paragraph').show();
+                $('.views-row:first-child .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(2) .views-field-field-nested-paragraph').hide(false);
+                $('.views-row:nth-child(3) .views-field-field-nested-paragraph').hide(false);
+            }
+        
             $('.views-row:nth-child(4) .views-field-info').css("background-color", "#f23522");
             $('.views-row:first-child .views-field-info').css("background-color", "#87888e");
             $('.views-row:nth-child(2) .views-field-info').css("background-color", "#999ba1");

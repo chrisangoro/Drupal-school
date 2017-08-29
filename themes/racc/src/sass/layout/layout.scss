@@ -21,13 +21,17 @@ header{
 }
 
 .tabs{
-  padding-top: 51vh;
+  //padding-top: 51vh;
+}
+
+.messages--error{
+  display: none;
 }
 
 section{
-  position: absolute;
-  margin-top: 200%;
-  width: 100vw;
+  position: relative;
+  //margin-top: 200%;
+  //width: 100vw;
 }
 
 .site-footer{
