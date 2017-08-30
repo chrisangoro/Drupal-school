@@ -72,15 +72,36 @@
                     letter-spacing: 0.15em;
                 }
 
+                span{
+                    visibility: hidden;
+                }
+
                 ul{
                     background: white;
+                    top: 3.5em;
 
                     li{
                         color: black;
                         font-size: 1em;
-                        font-weight: 400;
                         letter-spacing: 0.15em;
+
+                        a{
+                            font-weight: 400;
+                            font-size: 0.8em;                            
+                        }
                     }
+
+                    li:hover{
+                        background: $racc-grey4;
+                    }
+                }
+            }
+
+            li:hover{
+                //background: white;
+
+                ul{
+                    top: 3.5em;
                 }
             }
         }

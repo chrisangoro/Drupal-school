@@ -1,0 +1,40 @@
+.tabs{
+    #block-enrollblock{
+        background: $racc-red;
+        padding: 1.8em 0;
+        //height: 6em;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+
+        .content{
+            display: inline-block;
+            margin-top: 0;
+
+            .field__item{
+                text-align: center;
+
+                a{
+                    background: white;
+                    font-size: 130%;
+                    letter-spacing: 1px;
+                    padding: 0.6em 3em;
+                    color: $font-black;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 560px) and (max-width: 1023px){
+    
+}
+
+@media all and (min-width: 1024px) {
+    .tabs{
+        #block-enrollblock{
+            display: none;
+        }
+    }
+}
