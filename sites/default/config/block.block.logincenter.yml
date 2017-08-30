@@ -10,8 +10,8 @@ dependencies:
     - bartik
 id: logincenter
 theme: bartik
-region: footer_third
-weight: -7
+region: footer_fourth
+weight: -8
 provider: null
 plugin: 'superfish:login-center'
 settings:

@@ -6,12 +6,12 @@ dependencies:
     - field.storage.node.body
     - field.storage.node.field_image
     - field.storage.node.field_url
-    - image.style.slider_image
     - node.type.slider
+    - responsive_image.styles.slider_image
   module:
-    - image
     - link
     - node
+    - responsive_image
     - slick
     - slick_views
     - text
@@ -90,9 +90,9 @@ display:
           id: ''
           override: true
           overridables:
+            arrows: arrows
             autoplay: autoplay
             dots: dots
-            arrows: '0'
             draggable: '0'
             infinite: '0'
             mouseWheel: '0'
@@ -279,9 +279,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: responsive_image
           settings:
-            image_style: slider_image
+            responsive_image_style: slider_image
             image_link: ''
           group_column: ''
           group_columns: {  }

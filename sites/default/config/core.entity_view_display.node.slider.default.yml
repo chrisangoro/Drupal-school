@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.slider.field_image
     - field.field.node.slider.field_url
     - node.type.slider
+    - responsive_image.styles.slider_image
   module:
     - link
     - responsive_image
@@ -28,8 +29,8 @@ content:
     weight: 102
     label: above
     settings:
+      responsive_image_style: slider_image
       image_link: ''
-      responsive_image_style: ''
     third_party_settings: {  }
     type: responsive_image
     region: content

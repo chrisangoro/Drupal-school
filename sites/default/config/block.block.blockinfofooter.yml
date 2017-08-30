@@ -10,8 +10,8 @@ dependencies:
     - bartik
 id: blockinfofooter
 theme: bartik
-region: footer_fourth
-weight: 0
+region: footer_highlight
+weight: -8
 provider: null
 plugin: 'block_content:cbcdeac0-1bfa-485b-a1ec-1146bd66eb27'
 settings:

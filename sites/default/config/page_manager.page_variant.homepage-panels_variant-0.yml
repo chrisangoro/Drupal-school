@@ -8,12 +8,10 @@ dependencies:
     - views.view.branding_home
     - views.view.events_home
     - views.view.news_home
-    - views.view.slider
     - views.view.student_spotlight
   content:
     - 'block_content:basic:36a4875c-0992-4378-9c87-d1e00d238ac9'
     - 'block_content:basic:f81670c8-9203-4712-b70a-a9ebbfeaaf64'
-    - 'block_content:double_paragraph:57dc8801-0d45-4a13-8918-b52b91967e31'
     - 'block_content:paragraph_block:72247caf-41dc-4de2-811f-d0346ac980f1'
   module:
     - block_content
@@ -94,17 +92,6 @@ variant_settings:
       weight: 3
       uuid: 209b561e-7c26-4a8f-a6a2-c8b30192cc31
       context_mapping: {  }
-    de635387-7ec3-43f2-bd48-c4b94561e42d:
-      id: 'views_block:slider-block_1'
-      label: ''
-      provider: views
-      label_display: '0'
-      views_label: ''
-      items_per_page: none
-      region: content
-      weight: -5
-      uuid: de635387-7ec3-43f2-bd48-c4b94561e42d
-      context_mapping: {  }
     448e5320-1347-4990-b376-01ffd13e8a4e:
       id: 'system_menu_block:get-c'
       label: 'Get Connected'
@@ -138,18 +125,6 @@ variant_settings:
       region: content
       weight: 4
       uuid: c127ecab-3d3f-44ab-b112-f3f8fa27d578
-      context_mapping: {  }
-    41577476-909f-45f5-8fff-f8b1f5fd9c80:
-      id: 'block_content:57dc8801-0d45-4a13-8918-b52b91967e31'
-      label: 'Tabs Home block'
-      provider: block_content
-      label_display: '0'
-      status: true
-      info: ''
-      view_mode: full
-      region: content
-      weight: -4
-      uuid: 41577476-909f-45f5-8fff-f8b1f5fd9c80
       context_mapping: {  }
   id: panels_variant
   uuid: 09ebe512-8eaf-4809-ad5a-f3d965a7e788

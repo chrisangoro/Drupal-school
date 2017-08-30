@@ -79,6 +79,7 @@ module:
   redirect_404: 0
   redirect_domain: 0
   responsive_image: 0
+  responsive_menu: 0
   search: 0
   search_api: 0
   search_api_db: 0

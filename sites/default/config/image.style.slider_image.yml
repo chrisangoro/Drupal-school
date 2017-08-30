@@ -1,16 +1,7 @@
 uuid: 5130c2b5-6e02-4c7e-a35a-fe265ef6689b
 langcode: en
 status: true
-dependencies:
-  module:
-    - focal_point
+dependencies: {  }
 name: slider_image
 label: 'Slider image'
-effects:
-  b3dc9963-2abe-4679-bfcb-56f48cb8967e:
-    uuid: b3dc9963-2abe-4679-bfcb-56f48cb8967e
-    id: focal_point_scale_and_crop
-    weight: 1
-    data:
-      width: 1200
-      height: 800
+effects: {  }

@@ -11,7 +11,7 @@ dependencies:
 id: policies
 theme: bartik
 region: footer_third
-weight: -8
+weight: -9
 provider: null
 plugin: 'superfish:footer-menu-3'
 settings:

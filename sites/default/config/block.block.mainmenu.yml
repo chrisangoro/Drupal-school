@@ -10,15 +10,15 @@ dependencies:
     - bartik
 id: mainmenu
 theme: bartik
-region: header
-weight: 0
+region: main_menu
+weight: -11
 provider: null
 plugin: 'superfish:main-menu'
 settings:
   id: 'superfish:main-menu'
   label: 'Main Menu'
   provider: superfish
-  label_display: visible
+  label_display: '0'
   level: '1'
   depth: '0'
   menu_type: horizontal
@@ -30,7 +30,7 @@ settings:
   slide: vertical
   supposition: 1
   hoverintent: 1
-  touch: '0'
+  touch: '2'
   touchbh: '2'
   touchbp: '768'
   touchua: '0'
