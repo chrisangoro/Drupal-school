@@ -135,14 +135,18 @@
     }
 }
 
-@media all and (min-width: 851px) {
+@media all and (min-width: 560px) and (max-width: 1023px){
+    
+}
+
+@media all and (min-width: 1024px) {
     .tabs{
         width: 73.33%;
         float: right;
         background: white;
         position: relative;
         z-index: 100;
-        margin-top: 50em !important;
+        margin-top: 50.09em !important;
 
         .region-tabs{
             margin-top: -0.71%;
