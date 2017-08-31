@@ -8,11 +8,10 @@
     }
 
     #block-responsivemenumobileicon{
+        float: right;
+        width: 50%;
 
         #toggle-icon{
-            margin-top: 1em;
-            margin-left: 4em;
-
             span.label{
                 display: none;
             }
@@ -29,6 +28,17 @@
         #toggle-icon::after{
             background: black;
         }
+    }
+
+    //Search icon styling
+    i{
+        width: 50%;
+        float: left;
+        margin: 13% 0;
+    }
+
+    i::before{
+        font-size: 185%;
     }
 }
 
@@ -47,6 +57,11 @@
         display: inline-block;
         //height: 60px;
         position: relative;
+        
+        //hide search icon when in desktop
+        i{
+            display: none;
+        }
 
         #block-mainmenu{
             display: inline-block;

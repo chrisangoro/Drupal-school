@@ -30,6 +30,7 @@ regions:
   logo: Logo
   top_menu: 'Top Menu'
   main_menu: 'Main Menu'
+  search_form: 'Search Form'
   #sidebar_first: 'Sidebar first'
   #sidebar_second: 'Sidebar Second'
   slider: 'Slider'

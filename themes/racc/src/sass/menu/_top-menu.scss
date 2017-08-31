@@ -42,7 +42,13 @@
 
                 a.is-active{
                     color: white !important;
-                }            
+                }
+                
+                i{
+                    cursor: pointer;
+                    color: white;
+                    font-size: 125%;
+                }
             }
         }
     }
