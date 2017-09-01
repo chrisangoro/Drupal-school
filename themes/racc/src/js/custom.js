@@ -1,9 +1,5 @@
-//function menu1(){
-  //  document.getElementById("dropdown-menu-1").classList.toggle("show");
-//}
-
 (function ($, Drupal) {
-    Drupal.behaviors.myModuleBehavior = {
+    Drupal.behaviors.customBehaviour = {
       attach: function (context, settings) {
         //tab info interactions
         $('.views-row:first-child .views-field-info').click(function(){
@@ -87,13 +83,15 @@
             $('.views-row:nth-child(3) .views-field-info').css("background-color", "#bbbbbf");
         })
 
+        //Toggle for the search form
+        $('i').unbind().click(function(){
+            $('.search_form').toggle();
+            if ($(window).width() < 1024) {
+                $("i").toggleClass('fa-search');
+                $("i").toggleClass('fa-times');
+            }
+        })  
+
       }
     };
   })(jQuery, Drupal);
-
-    //red filter on tabs images
-        // if ($('#row1').css('backgroun-color') == "#f23522") {
-        //     $('#row1').hover(function(){
-        //         $('#filter').show();
-        //     })
-        // }

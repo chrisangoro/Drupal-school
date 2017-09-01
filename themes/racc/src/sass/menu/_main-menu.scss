@@ -3,15 +3,22 @@
 }
 
 .main_menu{
+    width: 25%;
+    float: right;
+    position: relative;
+    z-index: 500;
+
     nav{
         display: none;
     }
 
     #block-responsivemenumobileicon{
-        float: right;
+        float: left;
         width: 50%;
 
         #toggle-icon{
+            margin-top: 23%;
+
             span.label{
                 display: none;
             }
@@ -34,19 +41,110 @@
     i{
         width: 50%;
         float: left;
-        margin: 13% 0;
+        margin: 19% 0;
     }
 
     i::before{
-        font-size: 185%;
+        font-size: 135%;
+        margin-left: 10%;
     }
 }
 
-.mm-panles{
-    font-weight: 800;
+#off-canvas{
+    //border-bottom: white;
 
-    .mm-panel{
-        font-weight: 600;
+    .mm-panels{
+        .mm-navbar{
+            //background-color: $racc-red;
+            border: white;
+
+            a{
+                color: $racc-title;
+                font-weight: 200;
+                font-size: 2.8em;
+                line-height: 1.6;
+                padding: 0.3em 0;
+
+                span{
+                    // color: white;
+                    // font-weight: 600;
+                    // font-size: 2em;
+                    // line-height: 1.6
+                }
+            }
+        }
+
+        .mm-listview{
+            margin-top: 3em;
+
+            .menu-item{
+                //border: white;
+                margin-bottom: 0.7em;
+
+                a{
+                    font-weight: 600;
+                    color: $racc-red-font;
+                    font-size: 0.9em;
+                }
+            }
+        }
+        .mm-panel{
+            font-weight: 600;
+        }
+    }
+}
+
+@media all and (min-width: 560px) and (max-width: 1023px){
+    .main_menu{
+        position: relative;
+        z-index: 500;
+
+        #toggle-icon{
+            margin-left: 50%;
+        }
+
+        i{
+            width: 50%;
+            float: left;
+            margin: 13% 0;
+        }
+
+        i::before{
+            font-size: 185%;
+            margin-left: 30%;
+        }
+    }
+
+    #off-canvas{
+            
+        .mm-panels{
+            .mm-navbar{
+    
+                a{
+                    font-weight: 200;
+                    font-size: 3.8em;
+                    line-height: 1.6;
+                    padding: 0.3em 0;
+                }
+            }
+    
+            .mm-listview{
+                margin-top: 6em;
+    
+                .menu-item{
+                    //border: white;
+                    margin-bottom: 1.2em;
+    
+                    a{
+                        font-weight: 600;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+            .mm-panel{
+                font-weight: 600;
+            }
+        }
     }
 }
 
@@ -65,6 +163,7 @@
 
         #block-mainmenu{
             display: inline-block;
+            margin-left: -10%;
         }
 
         ul{

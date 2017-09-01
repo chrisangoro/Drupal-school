@@ -8,6 +8,10 @@ body{
       border-bottom: 0;
   }
 
+  .search_form{
+    display: none;
+  }
+
   :hover{
     text-decoration: none;
     border-bottom: 0;
@@ -46,7 +50,7 @@ section{
 
   header{
     position: relative;
-    z-index: 100;
+    z-index: 500;
     background: $nav-background;
   }
 

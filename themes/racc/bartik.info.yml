@@ -20,7 +20,7 @@ version: VERSION
 core: 8.x
 libraries:
   - bartik/global-styling
-  - bartik/tabsJS
+  - bartik/customJS
 ckeditor_stylesheets:
   - css/base/elements.css
   - css/components/captions.css

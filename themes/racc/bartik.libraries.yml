@@ -81,10 +81,10 @@ color.preview:
   dependencies:
     - color/drupal.color
 
-tabsJS:
+customJS:
   version: VERSION
   js:
-    src/js/tabs.js: {}
+    src/js/custom.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
