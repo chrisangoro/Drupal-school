@@ -149,6 +149,11 @@
 }
 
 @media all and (min-width: 1024px) {
+    //overriding the padding that the superfish menu created in order to make it usable at lower desktop resolutions
+    ul.sf-menu .sf-with-ul{
+        padding-right: 1.5em !important;
+    }
+    
     .main_menu{
         width: 72.5%;
         left: 6.5%;
@@ -174,16 +179,16 @@
             //padding-top: 6px;
             //margin-left: -7px;
             color: $font-black;
-            letter-spacing: 1px;
+            //letter-spacing: 1px;
             text-transform: uppercase;
 
             li{
                 a{
-                    padding-right: 2.7em;
+                    padding-right: 1.5em !important;
                     color: black;
                     font-size: 1em;
                     font-weight: 600;
-                    letter-spacing: 0.15em;
+                    letter-spacing: 0.2em;
                 }
 
                 span{
