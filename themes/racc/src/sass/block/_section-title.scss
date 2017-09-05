@@ -1,0 +1,31 @@
+
+@media all and (min-width: 1024px) {
+    
+    .block-block-content{
+        
+        .field__item{
+
+            h2{
+                width: 75%;
+                padding: 1%;
+                float: left;
+                display: inline-block;
+                font-size: 185%;
+                color: $racc-title;
+            }
+
+            a{
+                width: 15%;
+                padding: 1%;
+                float: right;
+                display: inline-block;
+                text-decoration: none;
+                color: black;
+                font-size: 100%;
+                text-align: right;
+                text-transform: uppercase;
+                margin-top: 2.4%;
+            }
+        }
+    }   
+}

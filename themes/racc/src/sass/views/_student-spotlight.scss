@@ -1,0 +1,25 @@
+
+@media all and (min-width: 1024px) {
+
+    .block-views-blockstudent-spotlight-block-1{
+        width: 48%;
+        padding: 0 1%;
+        float: left;
+
+        .views-field-field-preview-image{
+            width: 50%;
+        }
+
+        .views-field-body{
+            width: 50%;
+            
+            a{
+                margin-top: 1em;
+            }
+
+            p{
+                margin-top: 2em;
+            }
+        }
+    }
+}

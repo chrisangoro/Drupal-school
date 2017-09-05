@@ -204,20 +204,21 @@
         }
 
         .slick-dots{
-            position: relative !important;
-            margin-top: -36.1%;
-            margin-bottom: 30%;
+            position: absolute !important;
+            margin-top: 0;
+            //top: 35%;
+            // margin-bottom: 30%;
             text-align: left;
-            padding-left: 10.5%;
+            padding-left: 10.8%;
 
             li{
-                padding-right: 4.2em;
+               padding-right: 4.2em;
 
                 button{
-                    //margin-right: 1em;
+                    margin-right: 1em;
                 }
                 button::before{
-                    //margin-right: 1em;
+                    margin-right: 1em;
                     content:url(../../images/NotActiveSlide.png);
                 }
             }

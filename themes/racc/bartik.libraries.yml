@@ -82,7 +82,7 @@ color.preview:
     - color/drupal.color
 
 customJS:
-  version: VERSION
+  version: VERSION1.12
   js:
     src/js/custom.js: {}
   dependencies:
@@ -97,9 +97,3 @@ maintenance_page:
   dependencies:
     - system/maintenance
     - bartik/global-styling
-
-# font-awesome:
-#   version: VERSION
-#     css:
-#       theme:
-#         fonts/font-awesome/css/font-awesome.css: {}
