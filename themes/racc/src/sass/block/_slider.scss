@@ -223,6 +223,12 @@
                 }
             }
 
+            li:hover{
+                button::before{
+                    content:url(../../images/ActiveSlide.png);
+                }
+            }
+
             .slick-active{
                 padding-right: 4.2em;
 

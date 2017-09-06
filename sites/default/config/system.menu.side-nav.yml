@@ -1,8 +1,0 @@
-uuid: c49f21b5-f6f9-4269-a66f-1b1c96b96df5
-langcode: en
-status: true
-dependencies: {  }
-id: side-nav
-label: 'side nav'
-description: 'sidebar navigation for content'
-locked: false

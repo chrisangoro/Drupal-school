@@ -1,8 +1,0 @@
-uuid: 5155f5ec-f4e2-495d-8e35-dc399478b738
-langcode: en
-status: true
-dependencies: {  }
-id: html_block
-label: 'HTML block'
-revision: 0
-description: ''

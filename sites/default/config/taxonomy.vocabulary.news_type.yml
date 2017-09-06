@@ -1,9 +1,0 @@
-uuid: 1a694247-19d2-4dca-966a-e95900fcc537
-langcode: en
-status: true
-dependencies: {  }
-name: 'News type'
-vid: news_type
-description: 'Different types of news that can be posted'
-hierarchy: 0
-weight: 0

@@ -1,0 +1,95 @@
+
+@media all and (min-width: 1024px){
+
+    .block-webform-block{
+        width: 87%;
+        float: right;
+        background: $racc-grey1;
+        padding: 2% 3% 3%;
+        box-sizing: border-box;
+
+        //title
+        h2{
+            text-transform: uppercase;
+            color: white;
+            font-weight: 400;
+            margin-bottom: 1em !important;
+            letter-spacing: 0;
+            font-size: 275% !important;
+            margin-top: 1%;
+        }
+
+        //form + text
+        .content{
+
+            .form-item-name{
+                input{
+                    width: 15%;
+                    float: left;
+                    margin: 0;
+                    margin-right: 8px;
+                    color: $racc-light-black;
+                    padding: 1.5;
+                    font-size: 11px;
+                    border-radius: 2px;
+                    box-shadow: none;
+                    height: 60px;
+                }
+            }
+
+            .form-item-phone{
+                input{
+                    width: 15%;
+                    float: left;
+                    margin: 0;
+                    margin-right: 8px;
+                    color: $racc-light-black;
+                    padding: 1.5;
+                    font-size: 11px;
+                    border-radius: 2px;
+                    box-shadow: none;
+                    height: 60px;
+                }
+            }
+
+            .form-item-email{
+                input{
+                    width: 23%;
+                    float: left;
+                    margin: 0;
+                    margin-right: 8px;
+                    color: $racc-light-black;
+                    padding: 1.5;
+                    font-size: 11px;
+                    border-radius: 2px;
+                    box-shadow: none;
+                    height: 60px;
+                }
+            }
+
+            .form-actions{
+                input{
+                    width: 11%;
+                    float: left;
+                    margin-right: 8px;
+                    color: white;
+                    background: $racc-grey1;
+                    font-size: 11px;
+                    box-shadow: none;
+                    height: 60px;
+                }
+            }
+
+            #edit-racc-phone{
+                color: white;
+                font-weight: 400;
+                font-size: 185%;
+                font-family: $racc-font;
+
+                strong{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

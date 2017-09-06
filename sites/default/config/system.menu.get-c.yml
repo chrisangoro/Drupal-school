@@ -1,8 +1,0 @@
-uuid: fa98b8a1-e57d-452f-9994-0eaa86673690
-langcode: en
-status: true
-dependencies: {  }
-id: get-c
-label: 'Get Connected'
-description: ''
-locked: false

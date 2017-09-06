@@ -1,8 +1,0 @@
-uuid: 612ca381-da76-48c1-b41f-af840c3801bd
-langcode: en
-status: true
-dependencies: {  }
-id: footer-menu-2
-label: 'Contact Information'
-description: ''
-locked: false

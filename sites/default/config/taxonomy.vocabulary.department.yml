@@ -1,9 +1,0 @@
-uuid: 02f19774-3703-47fb-83f0-242d5bc050d0
-langcode: en
-status: true
-dependencies: {  }
-name: Department
-vid: department
-description: 'A list of the college''s departments'
-hierarchy: 0
-weight: 0

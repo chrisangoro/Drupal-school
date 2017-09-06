@@ -1,8 +1,0 @@
-uuid: 118a2a0f-fe71-4172-b30c-7c8d85cfa429
-langcode: en
-status: true
-dependencies: {  }
-id: paragraph_block
-label: 'Paragraph Block'
-revision: 0
-description: 'A block with paragraph instead of html content'
