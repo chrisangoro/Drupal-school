@@ -1,0 +1,175 @@
+
+.social{
+    width: 100%;
+    display: block;
+    position: relative;    
+
+    #get-connected{
+        margin-bottom: -5px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    #twitter-block1{
+        margin-top: -4px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    #twitter-block2{
+        margin-top: -4px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    #twitter-block3{
+        margin-top: -4px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    #insta-block1{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    #insta-block2{
+        margin-top: -4px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    #insta-block3{
+        margin-top: -4px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    #insta-block4{
+        margin-top: -4px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .social{
+        float: left;
+        position: relative;
+        margin-top: 5%;
+        
+        #get-connected{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #insta-block1{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #insta-block2{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #insta-block3{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #insta-block4{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #twitter-block1{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        #twitter-block2{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        #twitter-block3{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
