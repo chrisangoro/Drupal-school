@@ -82,7 +82,7 @@ color.preview:
     - color/drupal.color
 
 customJS:
-  version: VERSION1.2
+  version: VERSION1.3
   js:
     src/js/custom.js: {}
   dependencies:
