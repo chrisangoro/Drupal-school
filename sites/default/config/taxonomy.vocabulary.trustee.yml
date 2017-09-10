@@ -1,0 +1,9 @@
+uuid: 137498da-b8bc-46ca-9556-e9e6500cf0ab
+langcode: en
+status: true
+dependencies: {  }
+name: Trustee
+vid: trustee
+description: 'member of the board of trustees'
+hierarchy: 0
+weight: 0

@@ -1,0 +1,24 @@
+uuid: ce6a54b8-0c55-431c-bffb-1848539ce92c
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.get-c
+  module:
+    - system
+  theme:
+    - bartik
+id: getconnected
+theme: bartik
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'system_menu_block:get-c'
+settings:
+  id: 'system_menu_block:get-c'
+  label: 'Get Connected'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

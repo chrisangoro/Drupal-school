@@ -1,0 +1,22 @@
+uuid: 13a6ba1f-9962-42f9-92b3-73496e0b0e46
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view paragraph content image_text'
+  - 'view paragraph content images'
+  - 'view paragraph content nested_paragraph'
+  - 'view paragraph content text'
+  - 'view paragraph content text_image'
+  - 'view paragraph content user'

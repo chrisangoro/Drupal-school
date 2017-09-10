@@ -95,13 +95,16 @@
         //position the slider dots below the slider text
 
         //console.log("wolololo" + position.top)
-        setInterval(function(){
-            $('.slick-dots').css({
-                'top': $('.slick-current .slide__caption').offset().top - 20,
-                'margin-top': $('.slick-current .slide__caption').outerHeight()
-                })},
-            333
-        );       
+        if ($(window).width() > 1024){
+            setInterval(function(){
+                
+                $('.slick-dots').css({
+                    'top': $('.slick-current .slide__caption').offset().top - 20,
+                    'margin-top': $('.slick-current .slide__caption').outerHeight()
+                    })},
+                333
+            );
+        }      
       }
     };
   })(jQuery, Drupal);

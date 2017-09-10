@@ -1,0 +1,30 @@
+uuid: b2d6ec32-c3aa-40d9-862b-106673709296
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.slider_image
+    - image.style.slider_mobile
+    - image.style.slider_ta
+  theme:
+    - bartik
+id: slider_image
+label: 'Slider image'
+image_style_mappings:
+  -
+    breakpoint_id: bartik.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slider_image
+  -
+    breakpoint_id: bartik.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slider_ta
+  -
+    breakpoint_id: bartik.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: slider_mobile
+breakpoint_group: bartik
+fallback_image_style: slider_image

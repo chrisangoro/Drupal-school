@@ -1,0 +1,33 @@
+uuid: a1c1d90c-b32a-4e22-bf5a-5e852c9999f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.career_opportunity
+  module:
+    - user
+id: node.career_opportunity.teaser
+targetEntityType: node
+bundle: career_opportunity
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_application_status: true
+  field_apply_by_date: true
+  field_bac: true
+  field_background_check: true
+  field_certificates: true
+  field_due_date: true
+  field_instructions: true
+  field_job_details: true
+  field_position_type: true
+  field_posted_date: true
+  field_required_qualifications: true
+  field_salary: true
+  field_summary: true
+  langcode: true

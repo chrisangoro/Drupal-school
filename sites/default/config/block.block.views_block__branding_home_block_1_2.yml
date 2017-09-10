@@ -1,0 +1,24 @@
+uuid: b0e06783-5b98-4b8e-951d-2b79633baf2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.branding_home
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__branding_home_block_1_2
+theme: bartik
+region: contentbottom
+weight: -14
+provider: null
+plugin: 'views_block:branding_home-block_1'
+settings:
+  id: 'views_block:branding_home-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

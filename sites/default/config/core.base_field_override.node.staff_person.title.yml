@@ -1,0 +1,18 @@
+uuid: 5a7471d6-b97f-4117-aa70-33d7024e99f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.staff_person
+id: node.staff_person.title
+field_name: title
+entity_type: node
+bundle: staff_person
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: abb58041-04dd-4b73-82c4-074b00eeb923
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Brand
+type: brand
+description: 'Logo of a brand with a link to the brand webpage.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

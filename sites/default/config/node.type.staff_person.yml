@@ -1,0 +1,17 @@
+uuid: 36c4d31d-3ed6-4087-9061-12f1fb7f2e6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Staff person'
+type: staff_person
+description: 'This content type has all the information of a person from the Staff Directory'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,8 @@
+uuid: eacbd905-4e21-4503-beca-f39e99c382dc
+langcode: en
+status: true
+dependencies: {  }
+id: login-center
+label: 'Login Center'
+description: ''
+locked: false

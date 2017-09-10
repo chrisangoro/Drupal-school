@@ -1,0 +1,8 @@
+uuid: 6c73b73a-a403-42ac-9769-74bfd5ba0b4a
+langcode: en
+status: true
+dependencies: {  }
+id: image_block
+label: 'Image block'
+revision: 0
+description: 'A block to place an image'

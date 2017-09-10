@@ -1,31 +1,40 @@
-
-@media all and (min-width: 1024px) {
+.block-block-content{
+    z-index: 0;
     
-    .block-block-content{
-        
-        .field__item{
+    .field--name-body.field__item{
 
-            h2{
-                width: 60%;
-                padding: 2%;
-                float: left;
-                display: inline-block;
-                font-size: 185%;
-                color: $racc-title;
-            }
+        h2{
+            width: 60%;
+            padding: 2%;
+            float: left;
+            display: inline-block;
+            font-size: 185%;
+            color: $racc-title;
+        }
+
+        a{
+            width: 10%;
+            padding: 2%;
+            float: right;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            font-size: 100%;
+            text-align: right;
+            text-transform: uppercase;
+            margin-top: 2.4%;
+        }
+    }
+}   
+
+@media all and (min-width: 560px) and (max-width: 1023px){
+    .block-block-content{
+
+        .field--name-body.field__item{
 
             a{
-                width: 15%;
-                padding: 2%;
-                float: right;
-                display: inline-block;
-                text-decoration: none;
-                color: black;
-                font-size: 100%;
-                text-align: right;
-                text-transform: uppercase;
-                margin-top: 2.4%;
+                margin-top: 5%;                
             }
         }
-    }   
+    }        
 }

@@ -1,0 +1,11 @@
+uuid: 63fb8c95-587d-4b2c-891f-c72234ac97ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_opportunity
+id: node.career_opportunity
+target_entity_type_id: node
+target_bundle: career_opportunity
+default_langcode: site_default
+language_alterable: false

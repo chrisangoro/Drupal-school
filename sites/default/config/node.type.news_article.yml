@@ -1,0 +1,17 @@
+uuid: 4529a8a1-0844-47e8-a79c-5ab6777d83af
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'News article'
+type: news_article
+description: 'Use news article to write about news.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

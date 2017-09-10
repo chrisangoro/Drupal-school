@@ -1,0 +1,41 @@
+uuid: cfa95964-37f7-4e36-8b0c-9fe8417a816d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.double_paragraph
+    - field.field.block_content.double_paragraph.field_nested_paragraph
+  module:
+    - paragraphs
+id: block_content.double_paragraph.default
+targetEntityType: block_content
+bundle: double_paragraph
+mode: default
+content:
+  field_nested_paragraph:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

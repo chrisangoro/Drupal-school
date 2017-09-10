@@ -1,0 +1,23 @@
+uuid: fe536519-ab61-4c4f-8d4c-b1966ec0ecdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.double_paragraph
+    - field.storage.block_content.field_nested_paragraph
+  module:
+    - entity_reference_revisions
+id: block_content.double_paragraph.field_nested_paragraph
+field_name: field_nested_paragraph
+entity_type: block_content
+bundle: double_paragraph
+label: 'Nested paragraph'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

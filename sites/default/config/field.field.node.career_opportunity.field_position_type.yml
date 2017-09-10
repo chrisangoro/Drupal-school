@@ -1,0 +1,21 @@
+uuid: 0e46fed8-9496-4c47-8497-96670b76ea7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_position_type
+    - node.type.career_opportunity
+  module:
+    - options
+id: node.career_opportunity.field_position_type
+field_name: field_position_type
+entity_type: node
+bundle: career_opportunity
+label: 'Position Type'
+description: 'part time or full time?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

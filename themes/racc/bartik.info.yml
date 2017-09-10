@@ -36,6 +36,7 @@ regions:
   slider: 'Slider'
   tabs: 'tabs'
   content: Content
+  contentbottom: 'Content Bottom'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'

@@ -1,3 +1,30 @@
+.block-views-blockstudent-spotlight-block-1{
+    width: 98%;
+    padding: 0 1%;
+
+    table {
+        //transform:rotate(90deg);  
+
+        tr, td{
+            //transform:rotate(-90deg);
+        }
+
+        .views-field-field-preview-image{
+            display: block;
+            //transform:rotate(-90deg);            
+        }
+
+        .views-field-title.views-field-body{
+            //transform:rotate(-90deg);
+        }
+    }
+}
+
+@media all and (min-width: 560px) and (max-width: 1023px){
+
+    
+}
+
 
 @media all and (min-width: 1024px) {
 
@@ -5,20 +32,64 @@
         width: 45%;
         padding: 0 2%;
         float: left;
+        z-index: 10;
+
+        table{
+            background-color: $racc-grey2;
+            border: none;
+            line-height: 0;
+            transform: rotate(0deg);
+
+            tbody{
+                vertical-align: top;
+                border: none;
+            }
+
+            tr, td{
+                border: none;
+                transform: rotate(0deg);
+            }
+        }
 
         .views-field-field-preview-image{
             width: 50%;
+            padding: 0 !important;
         }
 
         .views-field-body{
             width: 50%;
+            padding: 0 2%;
             
             a{
-                margin-top: 1em;
+                text-decoration: none;
+                color: white;
+                line-height: 1.2;         
+            }
+
+            a:first-child{
+                font-weight: 400;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                margin-top: -1em;                       
+            }
+
+            a:nth-child(2){
+                margin-top: 2em;                       
+                font-weight: 200;
+                line-height: 1.2;
+                font-size: 2.1rem;
+            }
+            a:nth-child(2)::before{
+                content: '\A';
             }
 
             p{
                 margin-top: 2em;
+                color: white;
+                line-height: 1.5;
+                font-size: 0.8rem;
+                letter-spacing: 0.7px;
+                font-family: 'Open Sans'
             }
         }
     }

@@ -1,0 +1,83 @@
+uuid: c25777b2-4d3b-43df-ba52-13ced9282039
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.staff_person.field_mailbox
+    - field.field.node.staff_person.field_person_email
+    - field.field.node.staff_person.field_phone_ext
+    - field.field.node.staff_person.field_position
+    - field.field.node.staff_person.field_room
+    - field.field.node.staff_person.field_type
+    - node.type.staff_person
+id: node.staff_person.default
+targetEntityType: node
+bundle: staff_person
+mode: default
+content:
+  field_mailbox:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_person_email:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_phone_ext:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_position:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_room:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

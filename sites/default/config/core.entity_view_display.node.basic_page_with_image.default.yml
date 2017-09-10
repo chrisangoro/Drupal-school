@@ -1,0 +1,40 @@
+uuid: 351ce7c3-40de-4593-beda-4de5474be793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.basic_page_with_image.body
+    - field.field.node.basic_page_with_image.field_image
+    - node.type.basic_page_with_image
+  module:
+    - image
+    - text
+    - user
+id: node.basic_page_with_image.default
+targetEntityType: node
+bundle: basic_page_with_image
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

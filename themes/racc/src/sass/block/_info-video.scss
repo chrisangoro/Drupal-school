@@ -1,0 +1,154 @@
+.content__bottom{
+    .block-block-content{
+
+        .field--name-field-responsive-image{
+            display: none;
+        }
+
+        .field--name-field-paragraph-block{
+
+            > .field__item:first-child{
+                background: $racc-red;
+                @media all and (max-width: 1024px){
+                    padding: 2% 2%;
+                    position: absolute;
+                    margin-top: 82%;
+                    z-index: 15;
+                }                    
+
+                h2{
+                    font-size: 24px;
+                    width: 100%;
+                    color: white;
+                    font-weight: 200;
+                }
+
+                p{
+                    color: white;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    font-weight: 500;
+                }
+            }
+            
+            > .field__item:nth-child(2){
+                //width: 98%;
+                z-index: 20;
+
+                @media all and (max-width: 1024px){
+                    margin: 0 1%;
+                }
+
+                .field--type-text-long{
+                    box-sizing: border-box;
+                    //padding: 0 5%;
+            
+                    > p:first-child{
+                        font-weight: 200;
+                        font-size: 1.8rem;
+                        letter-spacing: 0.5px;
+                        line-height: 1.8;
+                        color: $racc-title;
+                        @media all and (max-width: 1024px){
+                            margin-bottom: 1%;
+                        }
+                    }
+
+                    > p:nth-child(2){
+                        color: black;
+                        font-size: 16px;
+                        line-height: 1.8;
+                        font-weight: 500;
+                        letter-spacing: -0.067px;
+                    }
+                }
+            }                
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+
+    .content__bottom{
+
+        .block-block-content{
+
+            .field--name-field-responsive-image{
+                display: block;
+            }
+
+            .field--name-field-paragraph-block{
+                position: relative;
+                z-index: 100;
+                bottom: 300px;
+                background-color: $racc-red;
+                width: 87%;
+                font-size: 0;
+                
+
+                > .field__item:first-child{
+                    width: 31%;
+                    display: inline-block;
+                    height: 100%;
+                    box-sizing: border-box;
+                    vertical-align: top;
+                    //padding: 0;
+
+                    h2{
+                        margin-top: 10%;
+                        width: 100%;
+                        color: white;
+                        font-weight: 200;
+                        padding: 0 10%;
+                    }
+
+                    p{
+                        color: white;
+                        padding: 0 10%;
+                        font-size: 18px;
+                        line-height: 1.8;
+                        font-weight: 500;
+                    }
+                }
+
+                > .field__item:nth-child(2){
+                    width: 69%;
+                    display: inline-block;
+                    background-color: white;
+                    box-sizing: border-box;
+
+                    .field--type-image{
+                        width: 100%;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+
+                    .field--type-text-long{
+                        box-sizing: border-box;
+                        padding: 0 5%;
+                
+                        > p:first-child{
+                            font-weight: 200;
+                            font-size: 2.1rem;
+                            letter-spacing: 0.5px;
+                            line-height: 2.6rem;
+                            color: $racc-title;
+                        }
+
+                        > p:nth-child(2){
+                            color: black;
+                            font-size: 18px;
+                            line-height: 1.8;
+                            font-weight: 500;
+                            letter-spacing: -0.067px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

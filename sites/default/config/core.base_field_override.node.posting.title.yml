@@ -1,0 +1,18 @@
+uuid: 12355397-0a85-4398-8ac7-081152efc744
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.posting
+id: node.posting.title
+field_name: title
+entity_type: node
+bundle: posting
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

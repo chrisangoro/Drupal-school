@@ -1,0 +1,17 @@
+uuid: f2e145f5-d4bc-4298-8810-ef58d80bdeaf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Basic page with Image'
+type: basic_page_with_image
+description: 'A basic page with an image.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

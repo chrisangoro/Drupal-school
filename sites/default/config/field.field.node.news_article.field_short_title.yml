@@ -1,0 +1,19 @@
+uuid: 8c6a043c-8b0c-4977-abf5-bd4e17bab0dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_title
+    - node.type.news_article
+id: node.news_article.field_short_title
+field_name: field_short_title
+entity_type: node
+bundle: news_article
+label: 'Short Title'
+description: 'Short title to be shown in the news section of the home page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

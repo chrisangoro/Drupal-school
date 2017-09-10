@@ -1,0 +1,16 @@
+uuid: 73376d46-a37b-4ecc-be03-9e73171be07e
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: slider_ta
+label: 'Slider tablet'
+effects:
+  9ad822a2-1b3a-424b-8687-5ea4b39439f8:
+    uuid: 9ad822a2-1b3a-424b-8687-5ea4b39439f8
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 1024
