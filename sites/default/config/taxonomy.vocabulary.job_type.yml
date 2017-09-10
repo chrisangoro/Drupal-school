@@ -1,9 +1,0 @@
-uuid: 3d08956c-5b6f-42cd-8ba2-ac28fd091747
-langcode: en
-status: true
-dependencies: {  }
-name: 'Job type'
-vid: job_type
-description: 'different types of jobs available'
-hierarchy: 0
-weight: 0

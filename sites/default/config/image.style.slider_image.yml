@@ -1,7 +1,0 @@
-uuid: 5130c2b5-6e02-4c7e-a35a-fe265ef6689b
-langcode: en
-status: true
-dependencies: {  }
-name: slider_image
-label: 'Slider image'
-effects: {  }

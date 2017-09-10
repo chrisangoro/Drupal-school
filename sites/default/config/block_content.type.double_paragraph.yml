@@ -1,8 +1,0 @@
-uuid: 03f41bd7-9de9-487d-a6ba-1539020024a4
-langcode: en
-status: true
-dependencies: {  }
-id: double_paragraph
-label: 'Nested paragraph'
-revision: 0
-description: ''

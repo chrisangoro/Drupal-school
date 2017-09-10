@@ -1,9 +1,0 @@
-uuid: 106fea98-3d1f-4236-a2a1-99965d813bee
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: rcVSGZ4GsbbEhR2Cs5QeBYtGQb6PaVR-yUN5cD5NYmo
-id: text
-label: Text
-behavior_plugins: {  }

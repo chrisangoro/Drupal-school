@@ -1,9 +1,0 @@
-uuid: 16606952-a764-4349-8af3-5a028ce19ea8
-langcode: en
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: hMUUkaZ5ltrgaRH72GVepp2lDk8VRs6AzJQAXaTgMOg
-id: user
-label: User
-behavior_plugins: {  }
