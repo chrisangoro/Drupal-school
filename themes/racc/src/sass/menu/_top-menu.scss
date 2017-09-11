@@ -53,4 +53,17 @@
             }
         }
     }
+
+    .menu--language{
+        display: inline-block;
+        margin-left: 10%;
+
+        ul{
+
+            li{
+                padding: 0 10px;
+                font-size: 120%;
+            }
+        }
+    }
 }

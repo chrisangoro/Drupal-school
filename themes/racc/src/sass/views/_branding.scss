@@ -1,6 +1,11 @@
 .block-views-blockbranding-home-block-1{
     background: $racc-grey4;
-    bottom: 310px;
+    margin-top: -22.1em;
+
+    .views-row{
+        box-sizing: border-box;
+        padding: 5% 0;
+    }
 
     .views-col{
         text-align: center;
