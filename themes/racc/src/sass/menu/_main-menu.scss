@@ -155,6 +155,18 @@
     }
 }
 
+@media all and (min-width: 1024px) and (max-width: 1250px){
+    .main_menu{
+        ul{
+            li{
+                a{
+                    font-size: 0.8em;                    
+                }
+            }
+        }
+    }
+}
+
 @media all and (min-width: 1024px) {
     //overriding the padding that the superfish menu created in order to make it usable at lower desktop resolutions
     ul.sf-menu .sf-with-ul{
