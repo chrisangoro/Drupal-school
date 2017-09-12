@@ -237,13 +237,13 @@
                                 }
 
                                 ul{
-                                    columns: 2;
+                                    //columns: 2;
                                     list-style: none;
                                     padding-left: 3px;
-                                    margin-top: 1em;
+                                    margin-top: 2em;
 
                                     li{
-                                        padding-bottom: 1em;
+                                        padding-bottom: 0.7em;
                                         font-size: 17px;
                                         line-height: 1.5;
                                         color: $racc-red-font;

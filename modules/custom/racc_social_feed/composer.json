@@ -1,0 +1,10 @@
+{
+    "name": "root/racc_social_feed",
+    "authors": [
+        {
+            "name": "Christian Gonzalez",
+            "email": "chrisangoro@gmail.com"
+        }
+    ],
+    "require": {}
+}

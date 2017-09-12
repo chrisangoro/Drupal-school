@@ -1,0 +1,5 @@
+name: RACC Social Feed
+description: Pulls the latest post from RACC's social network and post it in the main page.
+
+type: module
+core: 8.x

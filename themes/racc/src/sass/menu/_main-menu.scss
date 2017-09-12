@@ -163,7 +163,7 @@
     
     .main_menu{
         width: 78.5%;
-        left: 6.5%;
+        left: 6%;
         display: inline-block;
         //height: 60px;
         position: relative;
@@ -175,7 +175,7 @@
 
         #block-mainmenu{
             display: inline-block;
-            margin-left: -0.8%;
+            margin-left: 0% !important;
 
             >.content{
                 margin-top: 0 !important;
