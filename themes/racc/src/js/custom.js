@@ -92,9 +92,19 @@
             }
         })
 
-        //position the slider dots below the slider text
+        //set div in social feed height same as the width;
+        var divWidth = $('.facebook_post').width();
+        $('.facebook_post').css({
+            'height':divWidth+'px'
+        })
+        $('.instagram_post').css({
+            'height':divWidth+'px'
+        })
+        $('#get__connected').css({
+            'height':divWidth+'px'
+        })
 
-        //console.log("wolololo" + position.top)
+        //position the slider dots below the slider text
         if ($(window).width() > 1024){
             setInterval(function(){
                 

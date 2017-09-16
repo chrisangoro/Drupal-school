@@ -1,0 +1,31 @@
+racc_social_feed.social_feed_controller_content:
+  path: '/racc_social_feed'
+  defaults:
+    _controller: '\Drupal\racc_social_feed\Controller\socialFeedController::content'
+    _title: 'socialFeed'
+  requirements:
+    _permission: 'access content'
+
+racc_social_feed.twitter_controller_content:
+  path: '/racc_social_feed/twitter'
+  defaults:
+    _controller: '\Drupal\racc_social_feed\Controller\twitterController::content'
+    _title: 'twitterContent'
+  requirements:
+    _permission: 'access content'
+
+racc_social_feed.facebook_test_test:
+  path: '/racc_social_feed/facebook'
+  defaults:
+    _controller: '\Drupal\racc_social_feed\Controller\FacebookTest::test'
+    _title: 'facebookTest'
+  requirements:
+    _permission: 'access content'
+
+racc_social_feed.instagram_test_test:
+  path: '/racc_social_feed/instagram'
+  defaults:
+    _controller: '\Drupal\racc_social_feed\Controller\InstagramTest::test'
+    _title: 'instagramTest'
+  requirements:
+    _permission: 'access content'

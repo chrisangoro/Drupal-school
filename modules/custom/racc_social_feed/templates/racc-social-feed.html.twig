@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Custom block implementation for the RACC social feed module.
+ */
+#}
+<div class="social__feed">
+  <div id="get__connected">
+    <h2> GET <br> CONNECTED </h2>
+    <ul>
+    </ul>
+  </div>
+  {% for post in content %}
+    {% if post[3] == "instagram" %}
+      <div class="instagram_post">
+        <a href=" {{ post[2] }} ">
+          <img src=" {{ post[0] }} ">
+          <div class="account">
+            <i class="fa fa-instagram"></i><p> {{ post[1] }} </p>
+          </div>
+        </a>
+      </div>
+    {% endif %}
+
+    {% if post[3] == "facebook" %}
+      <div class="facebook_post">
+        <a href="{{ post[2] }}">
+          <img src=" {{ post[0] }} ">
+          <p> {{ post[1] }} </p>
+          <div class="account">
+            <i class="fa fa-facebook"></i><p id="page_name"> {{ post[4] }} </p>
+          </div>
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+{# <script>
+(function ($) {
+  $('.social__feed').load();
+}) (jQuery);
+</script> #}

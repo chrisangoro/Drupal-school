@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Contains racc_social_feed.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use MetzWeb\Instagram\Instagram;
+
+/**
+ * Implements hook_help().
+ */
+function racc_social_feed_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the racc_social_feed module.
+    case 'help.page.racc_social_feed':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Pulls the social feed posts from the RACC social media accounts and post it in the page') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function racc_social_feed_theme() {
+  return [
+    'racc_social_feed' => [
+      'variables' => [
+        'menu' => [],
+        'content' => [],
+        'test' => NULL,
+      ]
+    ],
+  ];
+}

@@ -1,10 +1,19 @@
 {
-    "name": "root/racc_social_feed",
-    "authors": [
-        {
-            "name": "Christian Gonzalez",
-            "email": "chrisangoro@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "drupal/racc_social_feed",
+  "type": "drupal-module",
+  "description": "Pulls the social feed posts from the RACC social media accounts and post it in the page",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/racc_social_feed",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/racc_social_feed",
+    "source": "http://cgit.drupalcode.org/racc_social_feed"
+  },
+  "require": {
+    "facebook/graph-sdk": "5.x-dev",
+    "nathanmac/Parser": "^3.0@dev",
+    "cosenary/instagram": "^2.4@dev",
+    "j7mbo/twitter-api-php": "^1.0@dev"
+  }
 }
