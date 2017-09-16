@@ -2,6 +2,16 @@
 /**
  * @file
  * Custom block implementation for the RACC social feed module.
+ *
+ * Available variables:
+ * - menu: The content of the menu for the get__connected list. Includes strings with social media urls.
+ * - content: Content of the block. It has the social media post info in an array that has:
+ *   - [0]: Media (image) url.
+ *   - [1]: Social Media account name/Social Media post's text (on Facebook).
+ *   - [2]: Link to the social media post.
+ *   - [3]: Name of the social media.
+ *   - [4]: Social Media account name (on Facebook).
+ * - test: Prints an String for testing.
  */
 #}
 <div class="social__feed">
@@ -13,10 +23,10 @@
   {% for post in content %}
     {% if post[3] == "instagram" %}
       <div class="instagram_post">
-        <a href=" {{ post[2] }} ">
-          <img src=" {{ post[0] }} ">
+        <a href="{{ post[2] }}">
+          <img src="{{ post[0] }}">
           <div class="account">
-            <i class="fa fa-instagram"></i><p> {{ post[1] }} </p>
+            <i class="fa fa-instagram"></i><p>{{ post[1] }}</p>
           </div>
         </a>
       </div>
@@ -25,19 +35,13 @@
     {% if post[3] == "facebook" %}
       <div class="facebook_post">
         <a href="{{ post[2] }}">
-          <img src=" {{ post[0] }} ">
+          <img src="{{ post[0] }}">
           <p> {{ post[1] }} </p>
           <div class="account">
-            <i class="fa fa-facebook"></i><p id="page_name"> {{ post[4] }} </p>
+            <i class="fa fa-facebook"></i><p id="page_name">{{ post[4] }}</p>
           </div>
         </a>
       </div>
     {% endif %}
   {% endfor %}
 </div>
-
-{# <script>
-(function ($) {
-  $('.social__feed').load();
-}) (jQuery);
-</script> #}

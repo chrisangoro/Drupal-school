@@ -104,6 +104,24 @@
             'height':divWidth+'px'
         })
 
+        //hover effect in social feed module
+        $(".instagram_post").mouseover(function(){
+            $(this).animate({padding: '15px'});
+        });
+        
+        $(".instagram_post").mouseleave(function(){
+            $(this).animate({padding: '0'});
+        });
+
+        $(".facebook_post").mouseover(function(){
+            $(this).animate({padding: '15px'});
+        });
+        
+        $(".facebook_post").mouseleave(function(){
+            $(this).animate({padding: '0'});
+        });
+
+
         //position the slider dots below the slider text
         if ($(window).width() > 1024){
             setInterval(function(){
