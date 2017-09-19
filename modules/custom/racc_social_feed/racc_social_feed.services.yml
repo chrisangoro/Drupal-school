@@ -1,0 +1,9 @@
+services:
+  facebook:
+    class: Drupal\racc_social_feed\FacebookService
+    arguments: []
+
+  instagram:
+    class: Drupal\racc_social_feed\InstagramService
+    arguments: []
+
