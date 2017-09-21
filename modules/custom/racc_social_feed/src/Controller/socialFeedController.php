@@ -3,6 +3,7 @@
 namespace Drupal\racc_social_feed\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
+use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Class socialFeedController.
@@ -41,10 +42,22 @@ class socialFeedController extends ControllerBase {
       array_push($feed, $instagram->getFeedStructure($data));
     }
 
-    return [
-      '#theme' => 'racc_social_feed',
-      '#content' => $feed,
-    ];
+    $build = array(
+      'page' => array(
+        '#theme' => 'racc_social_feed',
+        '#content' => $feed,
+      ),
+    );
+    $html = \Drupal::service('renderer')->renderRoot($build);
+    $response = new Response();
+    $response->setContent($html);
+  
+    return $response;
+
+    // return [
+    //   '#theme' => 'racc_social_feed',
+    //   '#content' => $feed,
+    // ];
   }
   
 }
