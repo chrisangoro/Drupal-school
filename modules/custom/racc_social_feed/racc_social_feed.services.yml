@@ -7,3 +7,7 @@ services:
     class: Drupal\racc_social_feed\InstagramService
     arguments: []
 
+  twitter:
+    class: Drupal\racc_social_feed\TwitterService
+    arguments: []
+

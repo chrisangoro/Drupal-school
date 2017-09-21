@@ -19,10 +19,16 @@ class feedBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    
-    $content = new socialFeedController();
-    $build = $content->content();
 
-    return $build;
+    return [
+      '#theme' => 'social_feed_block',
+      '#content' => 'retrieving information.',
+      '#attached' => array(
+        'library' => array(
+          'racc_social_feed/AJAX-Call',
+        ),
+      ),
+    ];
   }
+  
 }

@@ -22,7 +22,7 @@ class socialFeedController extends ControllerBase {
    *
    * @return array
    * return an array of content.
-   * The content itself is an array that contains the social media page where it came,
+   * The content itself is an array that contains, where needed, the social media page where it came,
    * the post image, text, URL and the account that posted it.
    */
   public function content() {

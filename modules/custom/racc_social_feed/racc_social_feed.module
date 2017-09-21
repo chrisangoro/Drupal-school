@@ -36,5 +36,10 @@ function racc_social_feed_theme() {
         'test' => NULL,
       ]
     ],
+    'social_feed_block' => [
+      'variables' => [
+        'content' => '',
+      ]
+    ],
   ];
 }

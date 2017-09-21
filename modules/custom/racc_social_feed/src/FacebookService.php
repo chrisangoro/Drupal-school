@@ -51,10 +51,10 @@ class FacebookService {
    *    Data of the post (time posted, id, message).
    *
    * @return array
-   *   String - return the Information of the Facebook posts (time posted, id, message).
+   *   String - return the Information of the Facebook posts (URL, media, page name and message).
    */
   public function getFeedStructure($info) {
-    $post = array();
+    $post = [];
     $attachement = json_decode(\Drupal::httpClient()->get("https://graph.facebook.com/" . $info->id . "/attachments?&access_token=" . $this->appToken)->getBody());
     $idPieces = explode('_', (string) $info->id);
     array_push($post, $attachement->data[0]->media->image->src);

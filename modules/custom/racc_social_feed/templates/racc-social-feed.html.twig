@@ -4,7 +4,7 @@
  * Custom block implementation for the RACC social feed module.
  *
  * Available variables:
- * - menu: The content of the menu for the get__connected list. Includes strings with social media urls.
+ * - menu: The content of the menu for the get__connected list. Include strings with social media urls.
  * - content: Content of the block. It has the social media post info in an array that has:
  *   - [0]: Media (image) url.
  *   - [1]: Social Media account name/Social Media post's text (on Facebook).
@@ -31,7 +31,6 @@
         </a>
       </div>
     {% endif %}
-
     {% if post[3] == "facebook" %}
       <div class="facebook_post">
         <a href="{{ post[2] }}">

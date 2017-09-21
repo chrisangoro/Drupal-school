@@ -1,0 +1,7 @@
+AJAX-Call:
+  version: VERSION1.2
+  js:
+    src/js/AjaxCall.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
