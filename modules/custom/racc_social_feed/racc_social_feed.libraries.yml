@@ -1,5 +1,8 @@
-AJAX-Call:
-  version: VERSION1.2
+social_feed_library:
+  version: VERSION
+  css:
+    component:
+      css/social_feed.css: {}
   js:
     src/js/AjaxCall.js: {}
   dependencies:

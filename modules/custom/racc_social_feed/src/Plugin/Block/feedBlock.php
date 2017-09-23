@@ -25,7 +25,7 @@ class feedBlock extends BlockBase {
       '#content' => 'retrieving information.',
       '#attached' => array(
         'library' => array(
-          'racc_social_feed/AJAX-Call',
+          'racc_social_feed/social_feed_library',
         ),
       ),
     ];

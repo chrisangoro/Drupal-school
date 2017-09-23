@@ -16,6 +16,9 @@ class socialFeedController extends ControllerBase {
   private $instagram_api_key = '69969a5c7658494fb9806695ee284dad';
   private $instagram_access_token = '6036429331.0612931.1d05d5dd9dd246b9a695ce199fd3a64a';
 
+  private $bearer_token = 'AAAAAAAAAAAAAAAAAAAAACVO2QAAAAAAnDd%2B6MJHnId%2FrYSqVDQ9Qc7qigM%3DuBSnUQC1CpvBxc2Xv0iRXsgNsl6EAHB3D6DW9GXKatVkt23F37';
+  private $twitter_username = 'RACC_Dummy';
+
   private $number_of_posts = 3;
 
   /**
@@ -28,7 +31,7 @@ class socialFeedController extends ControllerBase {
    */
   public function content() {
 
-    $feed = array();
+    $feed = [];
     $facebook = new \Drupal\racc_social_feed\FacebookService($this->facebook_page_id, $this->facebook_token, $this->number_of_posts);
     $posts = $facebook->getPosts();
 
@@ -42,10 +45,24 @@ class socialFeedController extends ControllerBase {
       array_push($feed, $instagram->getFeedStructure($data));
     }
 
+    $twitter = new \Drupal\racc_social_feed\TwitterService($this->bearer_token, $this->number_of_posts, $this->twitter_username);
+    $posts = $twitter->getPosts();
+    $testing = [];
+    foreach ($posts as $data) {
+      array_push($feed, $twitter->getFeedStructure($data));
+      array_push($testing, $twitter->getFeedStructure($data)); 
+    }
+
+    $content = [];
+    for ($i=0; $i < 7; $i++) { 
+      array_push($content, $feed[$i]);
+    }
+
     $build = array(
       'page' => array(
         '#theme' => 'racc_social_feed',
-        '#content' => $feed,
+        '#content' => $content,
+        '#test' => $posts,
       ),
     );
     $html = \Drupal::service('renderer')->renderRoot($build);
@@ -53,11 +70,6 @@ class socialFeedController extends ControllerBase {
     $response->setContent($html);
   
     return $response;
-
-    // return [
-    //   '#theme' => 'racc_social_feed',
-    //   '#content' => $feed,
-    // ];
   }
   
 }

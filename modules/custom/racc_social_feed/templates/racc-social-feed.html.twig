@@ -16,9 +16,32 @@
 #}
 <div class="social__feed">
   <div id="get__connected">
-    <h2> GET <br> CONNECTED </h2>
-    <ul>
-    </ul>
+    <div class="get__connected__wrapper">
+      <h2> GET <br> CONNECTED </h2>
+      <div class="social__menu">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/RACC-Dummy-280905715738751" class="fa fa-facebook" target="_blank" title="Facebook">F</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/RACC_Dummy" class="fa fa-twitter" target="_blank" title="Twitter">T</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/RACCvideopage" class="fa fa-youtube" target="_blank" title="Youtube">Y</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/reading-area-community-college" class="fa fa-linkedin" target="_blank">L</a>
+          </li>
+          <li>
+            <a href="https://www.snapchat.com/add/racc_edu" class="fa fa-snapchat" target="_blank" title="Snapchat">S</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/racc_dummy/" class="fa fa-instagram" target="_blank">I</a>
+          </li>
+        </ul>
+      </div>  
+    </div>
+    <img src="modules/custom/racc_social_feed/resources/image/socialFeedPlaceholder.jpg">
   </div>
   {% for post in content %}
     {% if post[3] == "instagram" %}
@@ -34,7 +57,8 @@
     {% if post[3] == "facebook" %}
       <div class="facebook_post">
         <a href="{{ post[2] }}">
-          <img src="{{ post[0] }}">
+          <img src="modules/custom/racc_social_feed/resources/image/socialFeedPlaceholder.jpg">
+          <div class="facebook-img" style="background-image: url({{ post[0] }})"></div>
           <p> {{ post[1] }} </p>
           <div class="account">
             <i class="fa fa-facebook"></i><p id="page_name">{{ post[4] }}</p>
@@ -42,5 +66,17 @@
         </a>
       </div>
     {% endif %}
+    {% if post[1] == "twitter" %}
+      <div class="twitter_post">
+        <a href="#">
+          <img src="modules/custom/racc_social_feed/resources/image/socialFeedPlaceholder.jpg">
+          <p> {{ post[0] }} </p>
+          <div class="account">
+            <i class="fa fa-twitter"></i><p id="page_name">{{ post[2] }}</p>
+          </div>
+        </a>
+      </div>
+    {% endif %}
   {% endfor %}
 </div>
+<div class = "test">{{ kint(test) }}</div>

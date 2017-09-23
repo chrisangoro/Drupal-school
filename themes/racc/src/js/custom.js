@@ -92,42 +92,12 @@
             }
         })
 
-        //set div in social feed height same as the width;
-        var divWidth = $('.facebook_post').width();
-        $('.facebook_post').css({
-            'height':divWidth+'px'
-        })
-        $('.instagram_post').css({
-            'height':divWidth+'px'
-        })
-        $('#get__connected').css({
-            'height':divWidth+'px'
-        })
-
-        //hover effect in social feed module
-        $(".instagram_post").mouseover(function(){
-            $(this).animate({padding: '15px'});
-        });
-        
-        $(".instagram_post").mouseleave(function(){
-            $(this).animate({padding: '0'});
-        });
-
-        $(".facebook_post").mouseover(function(){
-            $(this).animate({padding: '15px'});
-        });
-        
-        $(".facebook_post").mouseleave(function(){
-            $(this).animate({padding: '0'});
-        });
-
-
         //position the slider dots below the slider text
         if ($(window).width() > 1024){
             setInterval(function(){
                 
                 $('.slick-dots').css({
-                    'top': $('.slick-current .slide__caption').offset().top - 20,
+                    //'top': $('.slick-current .slide__caption').offset().top - 20,
                     'margin-top': $('.slick-current .slide__caption').outerHeight()
                     })},
                 333

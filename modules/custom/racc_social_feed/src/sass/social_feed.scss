@@ -1,0 +1,349 @@
+//Colors
+$racc-red: #f23522;
+$racc-red-font: #ff3333;
+
+#loading{
+    text-align: center;
+}
+
+.social__feed{
+    width: 100%;
+    display: block;
+    position: relative;    
+    font-size: 0;
+
+    #get__connected{
+        background: $racc-red;
+        color: white;
+        box-sizing: border-box;
+        padding: 38px;
+        overflow: hidden;
+        margin: 0;
+
+        img{
+            display: block;
+            opacity: 0;
+            width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+        .get__connected__wrapper{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: auto;
+            z-index: 30;
+            vertical-align: top;            
+
+            h2{
+                font-size: 2.3rem;
+            }
+
+            .social__menu{
+                position: absolute;
+                width: 90%;
+                margin-top: 45%;
+
+                ul{
+                    list-style: none;
+                    width: 120%;
+                    height: 40px;
+                    
+                    li{
+                        width: 31.6666%;
+                        float: left;
+                        margin: 0;
+                        padding: 0;
+                        display: inline-block;
+                        list-style-type: none;
+                        list-style-image: none;
+        
+                        a{
+                            width: 40px;
+                            height: 40px;
+                            margin: 0;
+                            padding: 0;
+                            border-radius: 50%;
+                            background: white;
+                            color: $racc-red;
+                            font-size: 24px;
+                            letter-spacing: 20px;
+                            text-align: center;
+                        }
+        
+                        .fa:before {
+                            display: block;
+                            width: 22px;
+                            height: 24px;
+                            margin: 8px 8px 8px 10px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .instagram_post{
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+
+        a{
+            text-decoration: none;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+            .account{    
+                position: absolute;
+                bottom: 24px;
+                width: 100%;
+                text-align: center;
+                
+                i{
+                    color: white;
+                    width: 50%;
+                    float: left;
+                    padding-left: 34px;
+                    text-align: left;
+                    box-sizing:border-box;
+                    z-index: 15;                    
+                    font-size: 28px;
+                }
+
+                p{
+                    color: white;
+                    width: 50%;
+                    float: left;
+                    font-family: 'Open Sans',sans-serif;
+                    font-weight: 700;
+                    margin-left: -41px;
+                    height: 29px;
+                    font-size: 14px;
+                    line-height: 2;
+                    text-align: left;
+                    box-sizing: border-box;
+                    z-index: 15;                    
+                }
+            }
+        }
+    }
+
+
+    .facebook_post{
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+        box-sizing: border-box;
+        
+        a{
+            text-decoration: none;
+
+            img{
+                width: 100%;
+                height: auto;
+                border: 0;
+            }
+
+            .facebook-img{
+                background: no-repeat 50%;
+                background-size: cover;
+                z-index: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            p{
+                color: white;
+                position: absolute;
+                bottom: 70px;
+                z-index: 15;
+                padding: 0 30px;
+                font-size: 16px;
+            }
+
+            .account{    
+                position: absolute;
+                bottom: 24px;
+                width: 100%;
+                text-align: center;
+                
+                i{
+                    color: white;
+                    width: 50%;
+                    float: left;
+                    padding-left: 34px;
+                    text-align: left;
+                    box-sizing:border-box;
+                    z-index: 15;                    
+                    font-size: 28px;
+                }
+
+                p{
+                    color: white;
+                    position: relative;
+                    width: 50%;
+                    float: left;
+                    font-family: 'Open Sans',sans-serif;
+                    font-weight: 700;
+                    margin-left: -25%;
+                    display: inline-block;
+                    height: 29px;
+                    font-size: 14px;
+                    line-height: 2;
+                    text-align: left;
+                    box-sizing: border-box;
+                    z-index: 15;   
+                    bottom: 0;             
+                }
+            }
+        }
+    }
+
+    .twitter_post{
+        width: 100%;
+        float: left;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+        box-sizing: border-box;
+
+        a{
+            text-decoration: none;
+
+            img{
+                display: block;
+                opacity: 70;
+                width: 100%;
+                height: auto;
+                border: 0;
+            }
+
+            p{
+                font-family: 'Open Sans',sans-serif;
+                font-weight: 100;
+                position: absolute;
+                width: 80%;
+                margin: 0 10%;
+                padding: 0;
+                height: 100%;    
+                color: #646e82;
+                font-size: 16px;
+                top: 0;
+                transform: translateY(30%);
+            }
+
+            .account{    
+                position: absolute;
+                bottom: 24px;
+                width: 100%;
+                text-align: center;
+                
+                i{
+                    color: #ff3333;
+                    width: 50%;
+                    float: left;
+                    padding-left: 34px;
+                    text-align: left;
+                    box-sizing:border-box;
+                    z-index: 15;                    
+                    font-size: 28px;
+                }
+
+                p{
+                    color: #ff3333;
+                    width: 50%;
+                    display: inline-block;
+                    float: left;
+                    font-weight: 700;
+                    margin-left: -40%;
+                    margin-top: -2.5%;
+                    height: 29px;
+                    font-size: 14px;
+                    line-height: 2;
+                    text-align: left;
+                    z-index: 15;                    
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .social__feed{
+        float: left;
+        position: relative;
+        margin-top: 5%;
+        
+        #get__connected{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+    
+            .get__connected__wrapper{
+                width: 25%;        
+    
+                h2{
+                    font-size: 2rem;
+                }
+    
+                .social__menu{
+                    margin-top: 25%;
+    
+                    ul{
+                        width: 104%;
+                    }
+                }
+            }
+        }
+
+        .instagram_post{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+            box-sizing: border-box;            
+
+            a{
+                text-decoration: none;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .facebook_post{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .twitter_post{
+            width: 25%;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+            box-sizing: border-box;
+        }
+    }
+}
